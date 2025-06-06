@@ -36,7 +36,7 @@ export default function Testimonials() {
       program: "B.Tech Computer Science",
       year: "Class of 2023",
       quote:
-        "The hands-on learning approach and industry-focused curriculum at Starlight prepared me exceptionally well for my career. I secured a position at a leading tech company even before graduation.",
+        "The hands-on learning approach and industry-focused curriculum at Bangalore Institute prepared me exceptionally well for my career. I secured a position at a leading tech company even before graduation.",
       imageSrc:
         "https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
     },
@@ -45,7 +45,7 @@ export default function Testimonials() {
       program: "MBA Finance",
       year: "Class of 2022",
       quote:
-        "The faculty mentorship and networking opportunities at Starlight were invaluable. The case study approach to learning gave me practical insights that I apply daily in my current role.",
+        "The faculty mentorship and networking opportunities at Bangalore Institute were invaluable. The case study approach to learning gave me practical insights that I apply daily in my current role.",
       imageSrc:
         "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
     },

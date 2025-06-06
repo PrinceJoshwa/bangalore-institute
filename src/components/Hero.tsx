@@ -23,7 +23,7 @@ export default function Hero() {
             <button className="btn btn-primary bg-white text-blue-600 hover:bg-blue-50 px-8 py-3 text-lg">
               Apply Now
             </button>
-            <button className="btn btn-secondary text-white border-white hover:bg-blue-700 px-8 py-3 text-lg">
+            <button className="btn btn-secondary text-white border-white bg-blue-700 px-8 py-3 text-lg">
               Explore Programs
             </button>
           </div>

@@ -9,7 +9,7 @@ export default function CTA() {
                 Your Future Starts Here
               </div>
               <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-blue-800">
-                Join Us at Starlight Institute
+                Join Us at Bangalore Institute
               </h2>
               <p className="max-w-[600px] text-gray-600 md:text-xl">
                 Take the first step towards a successful career. Apply now for the upcoming academic session and become
