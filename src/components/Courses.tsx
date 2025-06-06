@@ -205,7 +205,8 @@ export default function Courses() {
 
         <div className="flex justify-center mt-12">
           <button className="btn btn-primary px-8 py-3">
-            View All Programs <ChevronRight className="ml-2 h-4 w-4" />
+            View All Programs 
+            {/* <ChevronRight className="ml-2 h-4 w-4" /> */}
           </button>
         </div>
       </div>
