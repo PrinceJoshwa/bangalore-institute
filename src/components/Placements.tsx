@@ -228,7 +228,7 @@ export default function Placements() {
     manufacturing: [
       {
         name: "Bosch",
-        logo: "https://res.cloudinary.com/dsj3kcbf4/image/upload/v1749467507/2_gcbgqf.png",
+        logo: "https://res.cloudinary.com/dsj3kcbf4/image/upload/v1749472845/2-removebg-preview_msujna.png",
       },
       {
         name: "Honeywell",
@@ -236,11 +236,11 @@ export default function Placements() {
       },
       {
         name: "Royal Enfield",
-        logo: "https://res.cloudinary.com/dsj3kcbf4/image/upload/v1749467514/9_j9fcpd.png",
+        logo: "https://res.cloudinary.com/dsj3kcbf4/image/upload/v1749472941/9-removebg-preview_ahtdlm.png",
       },
       {
         name: "Mindtree",
-        logo: "https://res.cloudinary.com/dsj3kcbf4/image/upload/v1749467523/17_ik9ov0.png",
+        logo: "https://res.cloudinary.com/dsj3kcbf4/image/upload/v1749473431/17-removebg-preview_1_hx9coo.png",
       },
     ],
     consulting: [
@@ -254,11 +254,11 @@ export default function Placements() {
       },
       {
         name: "HCL",
-        logo: "https://res.cloudinary.com/dsj3kcbf4/image/upload/v1749467524/18_bnqtlb.png",
+        logo: "https://res.cloudinary.com/dsj3kcbf4/image/upload/v1749473427/18-removebg-preview_rgtk5c.png",
       },
       {
         name: "Wipro",
-        logo: "https://res.cloudinary.com/dsj3kcbf4/image/upload/v1749467516/11_fqduj0.png",
+        logo: "https://res.cloudinary.com/dsj3kcbf4/image/upload/v1749473429/11-removebg-preview_uqfk0o.png",
       },
     ],
     infrastructure: [
@@ -268,15 +268,15 @@ export default function Placements() {
       },
       {
         name: "Jindal Steel",
-        logo: "https://res.cloudinary.com/dsj3kcbf4/image/upload/v1749467520/15_jwqivz.png",
+        logo: "https://res.cloudinary.com/dsj3kcbf4/image/upload/v1749473336/15-removebg-preview_psy2ml.png",
       },
       {
         name: "Sobha",
-        logo: "https://res.cloudinary.com/dsj3kcbf4/image/upload/v1749467547/20_eifdeq.png",
+        logo: "https://res.cloudinary.com/dsj3kcbf4/image/upload/v1749473426/20-removebg-preview_mfsbjx.png",
       },
       {
         name: "DXC",
-        logo: "https://res.cloudinary.com/dsj3kcbf4/image/upload/v1749467670/24_kjqz1g.png",
+        logo: "https://res.cloudinary.com/dsj3kcbf4/image/upload/v1749473596/24-removebg-preview_zqmkz5.png",
       },
     ],
   }
