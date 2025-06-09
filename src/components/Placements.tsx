@@ -264,7 +264,7 @@ export default function Placements() {
     infrastructure: [
       {
         name: "Volvo",
-        logo: "https://res.cloudinary.com/dsj3kcbf4/image/upload/v1749467518/13_b2fn9w.png",
+        logo: "https://res.cloudinary.com/dsj3kcbf4/image/upload/v1749473704/13-removebg-preview_n46whg.png",
       },
       {
         name: "Jindal Steel",
