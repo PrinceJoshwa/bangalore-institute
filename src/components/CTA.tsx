@@ -1,6 +1,6 @@
 export default function CTA() {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 bg-white">
+    <section className="w-full py-12 md:py-24 lg:py-8 bg-white">
       <div className="container mx-auto px-4">
         <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
           <div className="flex flex-col justify-center space-y-4">

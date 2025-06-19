@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import { BookOpen, Laptop, Activity, Home } from "lucide-react"
+import Campus from "./Campus"
 
 export default function CampusLife() {
   const [activeImage, setActiveImage] = useState(0)
@@ -30,10 +31,11 @@ export default function CampusLife() {
   ]
 
   return (
-    <section id="campus" className="w-full py-12 md:py-24 lg:py-20 bg-white">
+    <section id="campus" className="w-full py-12 md:py-24 lg:py-8 bg-white">
       <div className="container mx-auto px-4">
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
           <div className="space-y-2">
+            <Campus/>
             <div className="inline-block rounded-lg bg-blue-100 px-3 py-1 text-sm text-blue-600">
               Student Experience
             </div>
