@@ -1,232 +1,194 @@
-
-// import { Code, Award, CheckCircle, TrendingUp, Users, BookOpen } from "lucide-react"
+// import {
+//   Code,
+//   Database,
+//   Globe,
+//   Smartphone,
+//   Award,
+//   Users,
+//   BookOpen,
+//   Briefcase,
+//   TrendingUp,
+//   CheckCircle,
+//   Star,
+// } from "lucide-react"
 
 // export default function BCAFullStackProgram() {
-//   const semesterPlan = [
-//     {
-//       semester: "Sem 1-2",
-//       title: "Foundations & Frontend",
-//       description: "Master web fundamentals and create interactive user interfaces",
-//       topics: ["HTML5, CSS3, JavaScript", "React.js Fundamentals", "UI/UX Design Principles", "Version Control (Git)"],
-//     },
-//     {
-//       semester: "Sem 3-4",
-//       title: "Backend & System Design",
-//       description: "Build robust server-side applications and optimize architecture",
-//       topics: ["Node.js, Express.js", "Database Management", "API Development", "System Architecture"],
-//     },
-//     {
-//       semester: "Sem 5",
-//       title: "AI Integration",
-//       description: "Incorporate artificial intelligence into full stack applications",
-//       topics: ["TensorFlow.js", "OpenAI API Integration", "Machine Learning Basics", "AI-Powered Applications"],
-//     },
-//     {
-//       semester: "Sem 6",
-//       title: "Capstone & DSA",
-//       description: "Complete industry projects and master data structures",
-//       topics: [
-//         "Data Structures & Algorithms",
-//         "Industry Capstone Project",
-//         "Performance Optimization",
-//         "Deployment & DevOps",
-//       ],
-//     },
-//   ]
-
-//   const technologies = [
-//     {
-//       category: "Frontend",
-//       tools: ["React.js", "Tailwind CSS", "Bootstrap", "JavaScript ES6+"],
-//     },
-//     {
-//       category: "Backend",
-//       tools: ["Node.js", "Express.js", "MongoDB", "PostgreSQL"],
-//     },
-//     {
-//       category: "DevOps",
-//       tools: ["Docker", "Kubernetes", "AWS", "GitHub Actions"],
-//     },
-//     {
-//       category: "AI Tools",
-//       tools: ["TensorFlow.js", "OpenAI API", "Machine Learning", "Data Analysis"],
-//     },
-//   ]
-
-//   const projects = [
-//     {
-//       category: "Web Development",
-//       projects: ["Interactive Portfolio Website", "Dynamic To-Do List App", "Basic Blog Platform (CRUD)"],
-//     },
-//     {
-//       category: "Backend & API",
-//       projects: ["E-commerce Product Management API", "User Authentication System", "Real-time Chat Application"],
-//     },
-//     {
-//       category: "DevOps & Cloud",
-//       projects: [
-//         "Containerized Full-Stack App Deployment",
-//         "Cloud CI/CD Pipeline for Web App",
-//         "Microservices Architecture",
-//       ],
-//     },
-//     {
-//       category: "AI Integration",
-//       projects: ["AI-Powered Text Summarizer", "Image Classification Web App", "Smart Chatbot Interface"],
-//     },
+//   const techStack = [
+//     { name: "Frontend", technologies: ["React", "Angular", "Vue.js", "HTML5", "CSS3", "JavaScript"] },
+//     { name: "Backend", technologies: ["Node.js", "Python", "Java", "PHP", "Express.js", "Django"] },
+//     { name: "Database", technologies: ["MySQL", "MongoDB", "PostgreSQL", "Redis", "Firebase"] },
+//     { name: "Cloud & DevOps", technologies: ["AWS", "Azure", "Docker", "Kubernetes", "Git", "CI/CD"] },
 //   ]
 
 //   const careerPaths = [
+//     { title: "Full Stack Developer", package: "₹6-12 LPA", companies: "TCS, Infosys, Wipro" },
+//     { title: "Frontend Developer", package: "₹5-10 LPA", companies: "Accenture, HCL, Cognizant" },
+//     { title: "Backend Developer", package: "₹7-14 LPA", companies: "IBM, Samsung, Bosch" },
+//     { title: "DevOps Engineer", package: "₹8-15 LPA", companies: "Amazon, Microsoft, Google" },
+//   ]
+
+//   const programHighlights = [
 //     {
-//       level: "Entry-Level",
-//       roles: ["Junior Full Stack Developer", "Frontend Developer", "Backend Developer"],
-//       package: "₹4-6 LPA",
+//       icon: <Award className="h-6 w-6" />,
+//       title: "Industry Certifications",
+//       desc: "AWS, Google Cloud, Microsoft Azure",
+//     },
+//     { icon: <Users className="h-6 w-6" />, title: "Expert Faculty", desc: "15+ years industry experience" },
+//     { icon: <Briefcase className="h-6 w-6" />, title: "Live Projects", desc: "Real-world application development" },
+//     { icon: <TrendingUp className="h-6 w-6" />, title: "100% Placement", desc: "Guaranteed job assistance" },
+//   ]
+
+//   const curriculum = [
+//     {
+//       semester: "Semester 1-2",
+//       subjects: ["Programming Fundamentals", "Data Structures", "Web Technologies", "Database Management"],
+//       focus: "Foundation Building",
 //     },
 //     {
-//       level: "Mid-Level",
-//       roles: ["Full Stack Developer", "Software Engineer", "DevOps Engineer"],
-//       package: "₹6-10 LPA",
+//       semester: "Semester 3-4",
+//       subjects: ["Advanced JavaScript", "React.js", "Node.js", "API Development"],
+//       focus: "Core Development",
 //     },
 //     {
-//       level: "Senior-Level",
-//       roles: ["Senior Developer", "Tech Lead", "Solution Architect"],
-//       package: "₹10-15 LPA",
+//       semester: "Semester 5-6",
+//       subjects: ["Cloud Computing", "DevOps", "Mobile Development", "Capstone Project"],
+//       focus: "Specialization",
 //     },
 //   ]
 
 //   return (
-//     <section id="bca-fullstack" className="w-full py-12 md:py-24 lg:py-8 bg-white">
-//       <div className="container mx-auto px-4">
-//         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
-//           <div className="space-y-2">
-//             <div className="inline-block rounded-lg bg-blue-100 px-3 py-1 text-sm text-blue-600">
-//               4-Year Integrated Program
-//             </div>
-//             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-blue-800">
-//               BCA + Full Stack + PGCCA Program
-//             </h2>
-//             <p className="max-w-3xl text-gray-600 md:text-xl">
-//               A comprehensive 4-year program combining undergraduate degree, professional certification, and
-//               postgraduate certificate in computer applications with full stack development specialization.
-//             </p>
-//           </div>
-//         </div>
-
-//         {/* Program Overview */}
-//         <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
-//           <div>
-//             <img
-//               src="https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80"
-//               alt="Full stack development workspace"
-//               className="w-full h-[400px] object-cover rounded-xl shadow-lg"
-//             />
-//           </div>
-//           <div className="space-y-6">
-//             <div>
-//               <h3 className="text-2xl font-bold text-blue-800 mb-4">Program Structure</h3>
+//     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-blue-50">
+//       {/* Hero Section */}
+//       <section className="relative overflow-hidden bg-gradient-to-r from-slate-900 via-blue-900 to-indigo-900 text-white">
+//         <div className="absolute inset-0 bg-black/20"></div>
+//         <div className="relative container mx-auto px-4 py-20">
+//           <div className="grid lg:grid-cols-2 gap-12 items-center">
+//             <div className="space-y-8">
 //               <div className="space-y-4">
-//                 <div className="flex items-start gap-3">
-//                   <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center shrink-0">
-//                     <span className="text-blue-600 font-bold text-sm">3</span>
-//                   </div>
-//                   <div>
-//                     <h4 className="font-semibold text-gray-800">Years: BCA</h4>
-//                     <p className="text-gray-600 text-sm">Undergraduate Degree in Computer Applications</p>
-//                   </div>
+//                 <div className="inline-flex items-center gap-2 bg-blue-600/20 backdrop-blur-sm border border-blue-400/30 rounded-full px-4 py-2 text-sm font-medium">
+//                   <Star className="h-4 w-4 text-yellow-400" />
+//                   Most Popular Program
 //                 </div>
-//                 <div className="flex items-start gap-3">
-//                   <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center shrink-0">
-//                     <Code className="h-4 w-4 text-green-600" />
-//                   </div>
-//                   <div>
-//                     <h4 className="font-semibold text-gray-800">Full Stack Certification</h4>
-//                     <p className="text-gray-600 text-sm">Professional certification course in full stack development</p>
-//                   </div>
+//                 <h1 className="text-4xl lg:text-6xl font-bold leading-tight">
+//                   BCA + Full Stack Development
+//                   <span className="block text-2xl lg:text-3xl text-blue-300 font-normal mt-2">+ PGCCA</span>
+//                 </h1>
+//                 <p className="text-xl text-blue-100 leading-relaxed max-w-2xl">
+//                   Master modern web development with our comprehensive 3-year program combining Bachelor of Computer
+//                   Applications with advanced Full Stack Development and Post Graduate Certificate in Computer
+//                   Applications.
+//                 </p>
+//               </div>
+
+//               <div className="flex flex-wrap gap-4">
+//                 <div className="bg-white/10 backdrop-blur-sm rounded-lg px-6 py-3 border border-white/20">
+//                   <div className="text-2xl font-bold">3 Years</div>
+//                   <div className="text-sm text-blue-200">Duration</div>
 //                 </div>
-//                 <div className="flex items-start gap-3">
-//                   <div className="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center shrink-0">
-//                     <span className="text-orange-600 font-bold text-sm">1</span>
-//                   </div>
-//                   <div>
-//                     <h4 className="font-semibold text-gray-800">Year: PGCCA</h4>
-//                     <p className="text-gray-600 text-sm">Postgraduate Certificate in Computer Applications</p>
+//                 <div className="bg-white/10 backdrop-blur-sm rounded-lg px-6 py-3 border border-white/20">
+//                   <div className="text-2xl font-bold">₹2.5L</div>
+//                   <div className="text-sm text-blue-200">Total Fees</div>
+//                 </div>
+//                 <div className="bg-white/10 backdrop-blur-sm rounded-lg px-6 py-3 border border-white/20">
+//                   <div className="text-2xl font-bold">100%</div>
+//                   <div className="text-sm text-blue-200">Placement</div>
+//                 </div>
+//               </div>
+
+//               <div className="flex flex-wrap gap-4">
+//                 <button className="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
+//                   Apply Now
+//                 </button>
+//                 <button className="bg-white/10 backdrop-blur-sm border border-white/30 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white/20 transition-all duration-300">
+//                   Download Brochure
+//                 </button>
+//               </div>
+//             </div>
+
+//             <div className="relative">
+//               <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-white/20">
+//                 <img
+//                   src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+//                   alt="Full Stack Development Workspace"
+//                   className="w-full h-[400px] object-cover"
+//                 />
+//                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+//                 <div className="absolute bottom-6 left-6 right-6">
+//                   <div className="bg-white/90 backdrop-blur-sm rounded-lg p-4">
+//                     <div className="flex items-center gap-3">
+//                       <div className="w-12 h-12 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-lg flex items-center justify-center">
+//                         <Code className="h-6 w-6 text-white" />
+//                       </div>
+//                       <div>
+//                         <div className="font-semibold text-gray-900">Modern Development Environment</div>
+//                         <div className="text-sm text-gray-600">Industry-standard tools and technologies</div>
+//                       </div>
+//                     </div>
 //                   </div>
 //                 </div>
 //               </div>
 //             </div>
 //           </div>
 //         </div>
+//       </section>
 
-//         {/* Fee Structure */}
-//         <div className="bg-blue-50 rounded-xl p-8 mb-16">
-//           <h3 className="text-2xl font-bold text-blue-800 text-center mb-8">Comprehensive Fee Structure</h3>
-//           <div className="grid md:grid-cols-4 gap-6">
-//             <div className="card p-6 text-center">
-//               <div className="text-2xl font-bold text-blue-600 mb-2">₹25,000</div>
-//               <div className="text-sm text-gray-600 mb-1">Admission Fee</div>
-//               <div className="text-xs text-gray-500">Includes registration, laptop, and digital resources</div>
-//             </div>
-//             <div className="card p-6 text-center">
-//               <div className="text-2xl font-bold text-blue-600 mb-2">₹2,00,000</div>
-//               <div className="text-sm text-gray-600 mb-1">First Year</div>
-//               <div className="text-xs text-gray-500">BCA foundation with programming tools</div>
-//             </div>
-//             <div className="card p-6 text-center">
-//               <div className="text-2xl font-bold text-blue-600 mb-2">₹85,000</div>
-//               <div className="text-sm text-gray-600 mb-1">Second & Third Year</div>
-//               <div className="text-xs text-gray-500">Advanced coursework and certifications</div>
-//             </div>
-//             <div className="card p-6 text-center">
-//               <div className="text-2xl font-bold text-green-600 mb-2">100%</div>
-//               <div className="text-sm text-gray-600 mb-1">4th Year Scholarship</div>
-//               <div className="text-xs text-gray-500">With 70% aggregate in BCA</div>
-//             </div>
+//       {/* Program Highlights */}
+//       <section className="py-20 bg-white">
+//         <div className="container mx-auto px-4">
+//           <div className="text-center mb-16">
+//             <h2 className="text-4xl font-bold text-gray-900 mb-4">Why Choose This Program?</h2>
+//             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+//               Our comprehensive curriculum is designed to make you industry-ready with cutting-edge skills and
+//               real-world experience.
+//             </p>
 //           </div>
-//           <div className="text-center mt-6">
-//             <div className="text-3xl font-bold text-blue-800">₹3,95,000</div>
-//             <div className="text-gray-600">Total 4-Year Program Fee</div>
-//           </div>
-//         </div>
 
-//         {/* Semester-wise Learning Path */}
-//         <div className="mb-16">
-//           <h3 className="text-2xl font-bold text-blue-800 text-center mb-8">Full Stack Developer Pathway</h3>
-//           <div className="grid md:grid-cols-2 gap-6">
-//             {semesterPlan.map((sem, index) => (
-//               <div key={index} className="card p-6 hover:shadow-lg transition-shadow">
-//                 <div className="flex items-center gap-3 mb-4">
-//                   <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
-//                     <span className="text-blue-600 font-bold">{sem.semester}</span>
+//           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+//             {programHighlights.map((highlight, index) => (
+//               <div key={index} className="group">
+//                 <div className="bg-gradient-to-br from-white to-slate-50 rounded-2xl p-8 shadow-lg border border-slate-200 hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+//                   <div className="w-16 h-16 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-xl flex items-center justify-center text-white mb-6 group-hover:scale-110 transition-transform duration-300">
+//                     {highlight.icon}
 //                   </div>
-//                   <div>
-//                     <h4 className="text-lg font-bold text-blue-800">{sem.title}</h4>
-//                     <p className="text-gray-600 text-sm">{sem.description}</p>
-//                   </div>
+//                   <h3 className="text-xl font-bold text-gray-900 mb-3">{highlight.title}</h3>
+//                   <p className="text-gray-600">{highlight.desc}</p>
 //                 </div>
-//                 <ul className="space-y-2">
-//                   {sem.topics.map((topic, idx) => (
-//                     <li key={idx} className="flex items-center gap-2 text-sm text-gray-700">
-//                       <CheckCircle className="h-4 w-4 text-green-600" />
-//                       {topic}
-//                     </li>
-//                   ))}
-//                 </ul>
 //               </div>
 //             ))}
 //           </div>
 //         </div>
+//       </section>
 
-//         {/* Technologies & Tools */}
-//         <div className="mb-16">
-//           <h3 className="text-2xl font-bold text-blue-800 text-center mb-8">Essential Tools & Technologies</h3>
-//           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-//             {technologies.map((tech, index) => (
-//               <div key={index} className="card p-6 text-center">
-//                 <h4 className="text-lg font-bold text-blue-800 mb-4">{tech.category}</h4>
+//       {/* Technology Stack */}
+//       <section className="py-20 bg-gradient-to-br from-slate-50 to-blue-50">
+//         <div className="container mx-auto px-4">
+//           <div className="text-center mb-16">
+//             <h2 className="text-4xl font-bold text-gray-900 mb-4">Master Modern Technologies</h2>
+//             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+//               Learn the most in-demand technologies used by top companies worldwide.
+//             </p>
+//           </div>
+
+//           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+//             {techStack.map((stack, index) => (
+//               <div
+//                 key={index}
+//                 className="bg-white rounded-2xl p-8 shadow-lg border border-slate-200 hover:shadow-xl transition-all duration-300"
+//               >
+//                 <div className="text-center mb-6">
+//                   <div className="w-16 h-16 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-xl flex items-center justify-center text-white mx-auto mb-4">
+//                     {index === 0 && <Globe className="h-8 w-8" />}
+//                     {index === 1 && <Database className="h-8 w-8" />}
+//                     {index === 2 && <Database className="h-8 w-8" />}
+//                     {index === 3 && <Smartphone className="h-8 w-8" />}
+//                   </div>
+//                   <h3 className="text-xl font-bold text-gray-900 mb-4">{stack.name}</h3>
+//                 </div>
 //                 <div className="space-y-2">
-//                   {tech.tools.map((tool, idx) => (
-//                     <div key={idx} className="bg-blue-50 text-blue-700 px-3 py-1 rounded text-sm">
-//                       {tool}
+//                   {stack.technologies.map((tech, techIndex) => (
+//                     <div key={techIndex} className="flex items-center gap-2">
+//                       <CheckCircle className="h-4 w-4 text-green-500" />
+//                       <span className="text-gray-700">{tech}</span>
 //                     </div>
 //                   ))}
 //                 </div>
@@ -234,385 +196,588 @@
 //             ))}
 //           </div>
 //         </div>
+//       </section>
 
-//         {/* Student Projects */}
-//         <div className="mb-16 bg-gray-50 rounded-xl p-8">
-//           <h3 className="text-2xl font-bold text-blue-800 text-center mb-8">Student Projects</h3>
-//           <div className="grid md:grid-cols-2 gap-6">
-//             {projects.map((category, index) => (
-//               <div key={index} className="bg-white rounded-lg p-6">
-//                 <h4 className="text-lg font-bold text-blue-800 mb-4">{category.category}</h4>
-//                 <ul className="space-y-2">
-//                   {category.projects.map((project, idx) => (
-//                     <li key={idx} className="flex items-start gap-2 text-sm text-gray-700">
-//                       <Code className="h-4 w-4 text-blue-600 mt-0.5 shrink-0" />
-//                       {project}
-//                     </li>
-//                   ))}
-//                 </ul>
-//               </div>
-//             ))}
+//       {/* Curriculum */}
+//       <section className="py-20 bg-white">
+//         <div className="container mx-auto px-4">
+//           <div className="text-center mb-16">
+//             <h2 className="text-4xl font-bold text-gray-900 mb-4">Comprehensive Curriculum</h2>
+//             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+//               Structured learning path from fundamentals to advanced full-stack development.
+//             </p>
 //           </div>
-//         </div>
 
-//         {/* Career Opportunities */}
-//         <div className="mb-16">
-//           <h3 className="text-2xl font-bold text-blue-800 text-center mb-8">Career Opportunities</h3>
-//           <div className="grid md:grid-cols-3 gap-6">
-//             {careerPaths.map((path, index) => (
-//               <div key={index} className="card p-6 text-center">
-//                 <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-//                   <TrendingUp className="h-8 w-8 text-blue-600" />
+//           <div className="max-w-4xl mx-auto">
+//             {curriculum.map((sem, index) => (
+//               <div key={index} className="relative mb-12 last:mb-0">
+//                 <div className="flex items-start gap-8">
+//                   <div className="flex-shrink-0">
+//                     <div className="w-16 h-16 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-full flex items-center justify-center text-white font-bold text-lg">
+//                       {index + 1}
+//                     </div>
+//                   </div>
+//                   <div className="flex-1 bg-gradient-to-br from-white to-slate-50 rounded-2xl p-8 shadow-lg border border-slate-200">
+//                     <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-6">
+//                       <h3 className="text-2xl font-bold text-gray-900">{sem.semester}</h3>
+//                       <span className="inline-block bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-4 py-2 rounded-full text-sm font-medium">
+//                         {sem.focus}
+//                       </span>
+//                     </div>
+//                     <div className="grid md:grid-cols-2 gap-4">
+//                       {sem.subjects.map((subject, subIndex) => (
+//                         <div
+//                           key={subIndex}
+//                           className="flex items-center gap-3 bg-white rounded-lg p-4 border border-slate-200"
+//                         >
+//                           <BookOpen className="h-5 w-5 text-blue-600" />
+//                           <span className="text-gray-700 font-medium">{subject}</span>
+//                         </div>
+//                       ))}
+//                     </div>
+//                   </div>
 //                 </div>
-//                 <h4 className="text-lg font-bold text-blue-800 mb-2">{path.level}</h4>
-//                 <div className="text-2xl font-bold text-green-600 mb-3">{path.package}</div>
-//                 <ul className="text-sm text-gray-600 space-y-1">
-//                   {path.roles.map((role, idx) => (
-//                     <li key={idx}>{role}</li>
-//                   ))}
-//                 </ul>
+//                 {index < curriculum.length - 1 && (
+//                   <div className="absolute left-8 top-16 w-0.5 h-12 bg-gradient-to-b from-blue-600 to-indigo-600"></div>
+//                 )}
 //               </div>
 //             ))}
 //           </div>
 //         </div>
+//       </section>
 
-//         {/* Program Benefits */}
-//         <div className="bg-blue-600 rounded-xl p-8 text-white text-center">
-//           <h3 className="text-2xl font-bold mb-4">Why Choose Our Full Stack Program?</h3>
-//           <div className="grid md:grid-cols-3 gap-6 mb-6">
-//             <div>
-//               <Award className="h-8 w-8 mx-auto mb-2" />
-//               <h4 className="font-semibold mb-2">Industry-Aligned Curriculum</h4>
-//               <p className="text-blue-100 text-sm">
-//                 Curriculum designed with industry experts for real-world relevance
-//               </p>
-//             </div>
-//             <div>
-//               <Users className="h-8 w-8 mx-auto mb-2" />
-//               <h4 className="font-semibold mb-2">Individual Mentorship</h4>
-//               <p className="text-blue-100 text-sm">
-//                 Personal guidance from experienced faculty and industry professionals
-//               </p>
-//             </div>
-//             <div>
-//               <BookOpen className="h-8 w-8 mx-auto mb-2" />
-//               <h4 className="font-semibold mb-2">Hands-On Projects</h4>
-//               <p className="text-blue-100 text-sm">Real-world project experience throughout the program</p>
+//       {/* Career Opportunities */}
+//       <section className="py-20 bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900 text-white">
+//         <div className="container mx-auto px-4">
+//           <div className="text-center mb-16">
+//             <h2 className="text-4xl font-bold mb-4">Career Opportunities</h2>
+//             <p className="text-xl text-blue-100 max-w-3xl mx-auto">
+//               Launch your career with top companies offering competitive packages.
+//             </p>
+//           </div>
+
+//           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+//             {careerPaths.map((career, index) => (
+//               <div
+//                 key={index}
+//                 className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 hover:bg-white/20 transition-all duration-300"
+//               >
+//                 <div className="text-center">
+//                   <div className="w-16 h-16 bg-gradient-to-r from-blue-400 to-indigo-400 rounded-xl flex items-center justify-center mx-auto mb-6">
+//                     <Briefcase className="h-8 w-8 text-white" />
+//                   </div>
+//                   <h3 className="text-xl font-bold mb-3">{career.title}</h3>
+//                   <div className="text-2xl font-bold text-green-400 mb-2">{career.package}</div>
+//                   <p className="text-blue-200 text-sm">{career.companies}</p>
+//                 </div>
+//               </div>
+//             ))}
+//           </div>
+//         </div>
+//       </section>
+
+//       {/* CTA Section */}
+//       <section className="py-20 bg-gradient-to-r from-blue-600 to-indigo-600">
+//         <div className="container mx-auto px-4 text-center">
+//           <div className="max-w-3xl mx-auto">
+//             <h2 className="text-4xl font-bold text-white mb-6">Ready to Start Your Journey?</h2>
+//             <p className="text-xl text-blue-100 mb-8">
+//               Join thousands of successful graduates who have launched their careers with our comprehensive program.
+//             </p>
+//             <div className="flex flex-col sm:flex-row gap-4 justify-center">
+//               <button className="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-blue-50 transition-all duration-300 transform hover:scale-105 shadow-lg">
+//                 Apply Now - Limited Seats
+//               </button>
+//               <button className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-blue-600 transition-all duration-300">
+//                 Schedule Campus Visit
+//               </button>
 //             </div>
 //           </div>
-//           <button className="bg-orange-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-orange-600 transition-colors">
-//             Apply for Full Stack Program
-//           </button>
 //         </div>
-//       </div>
-//     </section>
+//       </section>
+//     </div>
 //   )
 // }
 
-import { Code, Award, CheckCircle, TrendingUp, Users, BookOpen } from "lucide-react"
+"use client"
+
+import { useState } from "react"
+import {
+  Code,
+  Database,
+  Globe,
+  Smartphone,
+  Award,
+  Users,
+  BookOpen,
+  Briefcase,
+  TrendingUp,
+  CheckCircle,
+  Star,
+  ArrowRight,
+  Play,
+} from "lucide-react"
 
 export default function BCAFullStackProgram() {
-  const semesterPlan = [
-    {
-      semester: "Sem 1-2",
-      title: "Foundations & Frontend",
-      description: "Master web fundamentals and create interactive user interfaces",
-      topics: ["HTML5, CSS3, JavaScript", "React.js Fundamentals", "UI/UX Design Principles", "Version Control (Git)"],
-    },
-    {
-      semester: "Sem 3-4",
-      title: "Backend & System Design",
-      description: "Build robust server-side applications and optimize architecture",
-      topics: ["Node.js, Express.js", "Database Management", "API Development", "System Architecture"],
-    },
-    {
-      semester: "Sem 5",
-      title: "AI Integration",
-      description: "Incorporate artificial intelligence into full stack applications",
-      topics: ["TensorFlow.js", "OpenAI API Integration", "Machine Learning Basics", "AI-Powered Applications"],
-    },
-    {
-      semester: "Sem 6",
-      title: "Capstone & DSA",
-      description: "Complete industry projects and master data structures",
-      topics: [
-        "Data Structures & Algorithms",
-        "Industry Capstone Project",
-        "Performance Optimization",
-        "Deployment & DevOps",
-      ],
-    },
-  ]
+  const [activeTab, setActiveTab] = useState("overview")
 
-  const technologies = [
+  const techStack = [
     {
-      category: "Frontend",
-      tools: ["React.js", "Tailwind CSS", "Bootstrap", "JavaScript ES6+"],
+      name: "Frontend",
+      technologies: ["React", "Angular", "Vue.js", "HTML5", "CSS3", "JavaScript"],
+      icon: <Globe className="h-8 w-8" />,
+      gradient: "from-blue-500 to-cyan-500",
     },
     {
-      category: "Backend",
-      tools: ["Node.js", "Express.js", "MongoDB", "PostgreSQL"],
+      name: "Backend",
+      technologies: ["Node.js", "Python", "Java", "PHP", "Express.js", "Django"],
+      icon: <Database className="h-8 w-8" />,
+      gradient: "from-green-500 to-emerald-500",
     },
     {
-      category: "DevOps",
-      tools: ["Docker", "Kubernetes", "AWS", "GitHub Actions"],
+      name: "Database",
+      technologies: ["MySQL", "MongoDB", "PostgreSQL", "Redis", "Firebase"],
+      icon: <Database className="h-8 w-8" />,
+      gradient: "from-purple-500 to-pink-500",
     },
     {
-      category: "AI Tools",
-      tools: ["TensorFlow.js", "OpenAI API", "Machine Learning", "Data Analysis"],
-    },
-  ]
-
-  const projects = [
-    {
-      category: "Web Development",
-      projects: ["Interactive Portfolio Website", "Dynamic To-Do List App", "Basic Blog Platform (CRUD)"],
-    },
-    {
-      category: "Backend & API",
-      projects: ["E-commerce Product Management API", "User Authentication System", "Real-time Chat Application"],
-    },
-    {
-      category: "DevOps & Cloud",
-      projects: [
-        "Containerized Full-Stack App Deployment",
-        "Cloud CI/CD Pipeline for Web App",
-        "Microservices Architecture",
-      ],
-    },
-    {
-      category: "AI Integration",
-      projects: ["AI-Powered Text Summarizer", "Image Classification Web App", "Smart Chatbot Interface"],
+      name: "Cloud & DevOps",
+      technologies: ["AWS", "Azure", "Docker", "Kubernetes", "Git", "CI/CD"],
+      icon: <Smartphone className="h-8 w-8" />,
+      gradient: "from-red-500 to-rose-500",
     },
   ]
 
   const careerPaths = [
     {
-      level: "Entry-Level",
-      roles: ["Junior Full Stack Developer", "Frontend Developer", "Backend Developer"],
-      package: "₹4-6 LPA",
+      title: "Full Stack Developer",
+      package: "₹6-12 LPA",
+      companies: "TCS, Infosys, Wipro",
+      description: "Build end-to-end web applications with modern frameworks",
+      skills: ["React", "Node.js", "MongoDB", "AWS"],
     },
     {
-      level: "Mid-Level",
-      roles: ["Full Stack Developer", "Software Engineer", "DevOps Engineer"],
-      package: "₹6-10 LPA",
+      title: "Frontend Developer",
+      package: "₹5-10 LPA",
+      companies: "Accenture, HCL, Cognizant",
+      description: "Create stunning user interfaces and experiences",
+      skills: ["React", "Vue.js", "CSS3", "JavaScript"],
     },
     {
-      level: "Senior-Level",
-      roles: ["Senior Developer", "Tech Lead", "Solution Architect"],
-      package: "₹10-15 LPA",
+      title: "Backend Developer",
+      package: "₹7-14 LPA",
+      companies: "IBM, Samsung, Bosch",
+      description: "Develop robust server-side applications and APIs",
+      skills: ["Python", "Java", "MySQL", "Docker"],
+    },
+    {
+      title: "DevOps Engineer",
+      package: "₹8-15 LPA",
+      companies: "Amazon, Microsoft, Google",
+      description: "Manage deployment pipelines and cloud infrastructure",
+      skills: ["AWS", "Docker", "Kubernetes", "CI/CD"],
+    },
+  ]
+
+  const programHighlights = [
+    {
+      icon: <Award className="h-6 w-6" />,
+      title: "Industry Certifications",
+      desc: "AWS, Google Cloud, Microsoft Azure",
+      gradient: "from-blue-500 to-cyan-500",
+    },
+    {
+      icon: <Users className="h-6 w-6" />,
+      title: "Expert Faculty",
+      desc: "15+ years industry experience",
+      gradient: "from-green-500 to-emerald-500",
+    },
+    {
+      icon: <Briefcase className="h-6 w-6" />,
+      title: "Live Projects",
+      desc: "Real-world application development",
+      gradient: "from-purple-500 to-pink-500",
+    },
+    {
+      icon: <TrendingUp className="h-6 w-6" />,
+      title: "100% Placement",
+      desc: "Guaranteed job assistance",
+      gradient: "from-red-500 to-rose-500",
+    },
+  ]
+
+  const curriculum = [
+    {
+      semester: "Semester 1-2",
+      subjects: ["Programming Fundamentals", "Data Structures", "Web Technologies", "Database Management"],
+      focus: "Foundation Building",
+      projects: ["Personal Portfolio", "Basic Calculator", "Simple Database"],
+    },
+    {
+      semester: "Semester 3-4",
+      subjects: ["Advanced JavaScript", "React.js", "Node.js", "API Development"],
+      focus: "Core Development",
+      projects: ["E-commerce Website", "Social Media App", "REST API"],
+    },
+    {
+      semester: "Semester 5-6",
+      subjects: ["Cloud Computing", "DevOps", "Mobile Development", "Capstone Project"],
+      focus: "Specialization",
+      projects: ["Full Stack Application", "Mobile App", "Cloud Deployment"],
+    },
+  ]
+
+  const learningPath = [
+    {
+      phase: "Foundation",
+      duration: "Months 1-8",
+      description: "Master programming fundamentals and web basics",
+      skills: ["HTML/CSS", "JavaScript", "Python", "Git"],
+      color: "from-blue-500 to-cyan-500",
+    },
+    {
+      phase: "Development",
+      duration: "Months 9-20",
+      description: "Build full-stack applications with modern frameworks",
+      skills: ["React", "Node.js", "MongoDB", "Express"],
+      color: "from-green-500 to-emerald-500",
+    },
+    {
+      phase: "Specialization",
+      duration: "Months 21-36",
+      description: "Advanced topics and industry-ready projects",
+      skills: ["AWS", "Docker", "Microservices", "Testing"],
+      color: "from-purple-500 to-pink-500",
     },
   ]
 
   return (
-    <section id="bca-fullstack" className="w-full py-12 md:py-24 lg:py-8 bg-white">
+    <section className="py-20 bg-gradient-to-br from-slate-50 via-white to-blue-50">
       <div className="container mx-auto px-4">
-        <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
-          <div className="space-y-2">
-            <div className="inline-block rounded-lg bg-blue-100 px-3 py-1 text-sm text-blue-600">
-              4-Year Integrated Program
-            </div>
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-blue-800">
-              BCA + Full Stack + PGCCA Program
-            </h2>
-            <p className="max-w-3xl text-gray-600 md:text-xl">
-              A comprehensive 4-year program combining undergraduate degree, professional certification, and
-              postgraduate certificate in computer applications with full stack development specialization.
-            </p>
+        {/* Header */}
+        <div className="text-center mb-16">
+          <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-blue-600/10 to-purple-600/10 backdrop-blur-sm border border-blue-200/50 rounded-full px-6 py-3 mb-6">
+            <Star className="h-5 w-5 text-blue-600" />
+            <span className="text-blue-700 font-semibold">Full Stack Development</span>
           </div>
+          <h1 className="text-4xl lg:text-6xl font-bold mb-6">
+            <span className="bg-gradient-to-r from-slate-900 to-slate-700 bg-clip-text text-transparent">
+              BCA + Full Stack
+            </span>
+            <br />
+            <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+              Development + PGCCA
+            </span>
+          </h1>
+          <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+            Master modern web development with our comprehensive 3-year program combining Bachelor of Computer
+            Applications with advanced Full Stack Development and Post Graduate Certificate in Computer Applications.
+          </p>
         </div>
 
-        {/* Program Overview */}
-        <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
-          <div>
-            <img
-              src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-              alt="Full stack development workspace with multiple monitors showing code"
-              className="w-full h-[400px] object-cover rounded-xl shadow-lg"
-            />
+        {/* Hero Image & Stats */}
+        <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
+          <div className="relative">
+            <div className="relative overflow-hidden rounded-3xl shadow-2xl">
+              <img
+                src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                alt="Full Stack Development Workspace"
+                className="w-full h-[500px] object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
+
+              {/* Floating Stats */}
+              <div className="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur-sm rounded-2xl p-6 shadow-xl">
+                <div className="grid grid-cols-3 gap-4 text-center">
+                  <div>
+                    <div className="text-2xl font-bold text-blue-600">3 Years</div>
+                    <div className="text-sm text-gray-600">Duration</div>
+                  </div>
+                  <div>
+                    <div className="text-2xl font-bold text-purple-600">₹2.5L</div>
+                    <div className="text-sm text-gray-600">Total Fees</div>
+                  </div>
+                  <div>
+                    <div className="text-2xl font-bold text-green-600">100%</div>
+                    <div className="text-sm text-gray-600">Placement</div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div className="space-y-6">
+
+          <div className="space-y-8">
             <div>
-              <h3 className="text-2xl font-bold text-blue-800 mb-4">Program Structure</h3>
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">Why Choose Full Stack Development?</h2>
+              <p className="text-lg text-gray-600 leading-relaxed mb-6">
+                Full Stack Development is one of the most in-demand skills in the tech industry. Our comprehensive
+                program ensures you master both frontend and backend technologies, making you a versatile developer
+                ready for any challenge.
+              </p>
+
               <div className="space-y-4">
-                <div className="flex items-start gap-3">
-                  <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center shrink-0">
-                    <span className="text-blue-600 font-bold text-sm">3</span>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-800">Years: BCA</h4>
-                    <p className="text-gray-600 text-sm">Undergraduate Degree in Computer Applications</p>
-                  </div>
+                <div className="flex items-center gap-3">
+                  <CheckCircle className="h-5 w-5 text-green-600" />
+                  <span className="text-gray-700">Industry-standard curriculum with latest technologies</span>
                 </div>
-                <div className="flex items-start gap-3">
-                  <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center shrink-0">
-                    <Code className="h-4 w-4 text-green-600" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-800">Full Stack Certification</h4>
-                    <p className="text-gray-600 text-sm">Professional certification course in full stack development</p>
-                  </div>
+                <div className="flex items-center gap-3">
+                  <CheckCircle className="h-5 w-5 text-green-600" />
+                  <span className="text-gray-700">Hands-on projects with real-world applications</span>
                 </div>
-                <div className="flex items-start gap-3">
-                  <div className="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center shrink-0">
-                    <span className="text-orange-600 font-bold text-sm">1</span>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-800">Year: PGCCA</h4>
-                    <p className="text-gray-600 text-sm">Postgraduate Certificate in Computer Applications</p>
-                  </div>
+                <div className="flex items-center gap-3">
+                  <CheckCircle className="h-5 w-5 text-green-600" />
+                  <span className="text-gray-700">Expert mentorship from industry professionals</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <CheckCircle className="h-5 w-5 text-green-600" />
+                  <span className="text-gray-700">Guaranteed placement assistance with top companies</span>
                 </div>
               </div>
             </div>
+
+            <div className="flex space-x-4">
+              <button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 rounded-xl font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 flex items-center">
+                Apply Now
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </button>
+              <button className="border-2 border-gray-300 hover:bg-gray-50 text-gray-700 px-8 py-4 rounded-xl font-semibold transition-all duration-200 flex items-center">
+                <Play className="mr-2 h-5 w-5" />
+                Watch Demo
+              </button>
+            </div>
           </div>
         </div>
 
-        {/* Fee Structure */}
-        <div className="bg-blue-50 rounded-xl p-8 mb-16">
-          <h3 className="text-2xl font-bold text-blue-800 text-center mb-8">Comprehensive Fee Structure</h3>
-          <div className="grid md:grid-cols-4 gap-6">
-            <div className="card p-6 text-center">
-              <div className="text-2xl font-bold text-blue-600 mb-2">₹25,000</div>
-              <div className="text-sm text-gray-600 mb-1">Admission Fee</div>
-              <div className="text-xs text-gray-500">Includes registration, laptop, and digital resources</div>
-            </div>
-            <div className="card p-6 text-center">
-              <div className="text-2xl font-bold text-blue-600 mb-2">₹2,00,000</div>
-              <div className="text-sm text-gray-600 mb-1">First Year</div>
-              <div className="text-xs text-gray-500">BCA foundation with programming tools</div>
-            </div>
-            <div className="card p-6 text-center">
-              <div className="text-2xl font-bold text-blue-600 mb-2">₹85,000</div>
-              <div className="text-sm text-gray-600 mb-1">Second & Third Year</div>
-              <div className="text-xs text-gray-500">Advanced coursework and certifications</div>
-            </div>
-            <div className="card p-6 text-center">
-              <div className="text-2xl font-bold text-green-600 mb-2">100%</div>
-              <div className="text-sm text-gray-600 mb-1">4th Year Scholarship</div>
-              <div className="text-xs text-gray-500">With 70% aggregate in BCA</div>
-            </div>
-          </div>
-          <div className="text-center mt-6">
-            <div className="text-3xl font-bold text-blue-800">₹3,95,000</div>
-            <div className="text-gray-600">Total 4-Year Program Fee</div>
-          </div>
-        </div>
-
-        {/* Semester-wise Learning Path */}
-        <div className="mb-16">
-          <h3 className="text-2xl font-bold text-blue-800 text-center mb-8">Full Stack Developer Pathway</h3>
-          <div className="grid md:grid-cols-2 gap-6">
-            {semesterPlan.map((sem, index) => (
-              <div key={index} className="card p-6 hover:shadow-lg transition-shadow">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
-                    <span className="text-blue-600 font-bold">{sem.semester}</span>
+        {/* Program Highlights */}
+        <div className="mb-20">
+          <h3 className="text-3xl font-bold text-gray-900 text-center mb-12">Program Highlights</h3>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {programHighlights.map((highlight, index) => (
+              <div key={index} className="group">
+                <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 text-center">
+                  <div
+                    className={`w-16 h-16 bg-gradient-to-r ${highlight.gradient} rounded-2xl flex items-center justify-center mx-auto mb-6 text-white shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-110`}
+                  >
+                    {highlight.icon}
                   </div>
-                  <div>
-                    <h4 className="text-lg font-bold text-blue-800">{sem.title}</h4>
-                    <p className="text-gray-600 text-sm">{sem.description}</p>
-                  </div>
+                  <h4 className="text-xl font-bold text-gray-900 mb-3">{highlight.title}</h4>
+                  <p className="text-gray-600">{highlight.desc}</p>
                 </div>
-                <ul className="space-y-2">
-                  {sem.topics.map((topic, idx) => (
-                    <li key={idx} className="flex items-center gap-2 text-sm text-gray-700">
-                      <CheckCircle className="h-4 w-4 text-green-600" />
-                      {topic}
-                    </li>
-                  ))}
-                </ul>
               </div>
             ))}
           </div>
         </div>
 
-        {/* Technologies & Tools */}
-        <div className="mb-16">
-          <h3 className="text-2xl font-bold text-blue-800 text-center mb-8">Essential Tools & Technologies</h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {technologies.map((tech, index) => (
-              <div key={index} className="card p-6 text-center">
-                <h4 className="text-lg font-bold text-blue-800 mb-4">{tech.category}</h4>
-                <div className="space-y-2">
-                  {tech.tools.map((tool, idx) => (
-                    <div key={idx} className="bg-blue-50 text-blue-700 px-3 py-1 rounded text-sm">
-                      {tool}
+        {/* Tab Navigation */}
+        <div className="flex justify-center mb-12">
+          <div className="bg-white rounded-2xl p-2 shadow-lg border border-gray-100">
+            <div className="flex space-x-2">
+              {[
+                { id: "overview", name: "Overview" },
+                { id: "curriculum", name: "Curriculum" },
+                { id: "technologies", name: "Technologies" },
+                { id: "careers", name: "Career Paths" },
+              ].map((tab) => (
+                <button
+                  key={tab.id}
+                  onClick={() => setActiveTab(tab.id)}
+                  className={`px-6 py-3 rounded-xl font-semibold transition-all duration-300 ${
+                    activeTab === tab.id
+                      ? "bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-lg"
+                      : "text-gray-600 hover:text-blue-600 hover:bg-gray-50"
+                  }`}
+                >
+                  {tab.name}
+                </button>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* Tab Content */}
+        {activeTab === "overview" && (
+          <div className="space-y-16">
+            {/* Learning Path */}
+            <div>
+              <h3 className="text-3xl font-bold text-gray-900 text-center mb-12">Your Learning Journey</h3>
+              <div className="space-y-8">
+                {learningPath.map((phase, index) => (
+                  <div key={index} className="relative">
+                    <div className="flex items-start gap-8">
+                      <div className="flex-shrink-0">
+                        <div
+                          className={`w-16 h-16 bg-gradient-to-r ${phase.color} rounded-full flex items-center justify-center text-white font-bold text-lg shadow-lg`}
+                        >
+                          {index + 1}
+                        </div>
+                      </div>
+                      <div className="flex-1 bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+                        <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-6">
+                          <div>
+                            <h4 className="text-2xl font-bold text-gray-900">{phase.phase}</h4>
+                            <p className="text-blue-600 font-semibold">{phase.duration}</p>
+                          </div>
+                        </div>
+                        <p className="text-gray-600 mb-6">{phase.description}</p>
+                        <div className="flex flex-wrap gap-2">
+                          {phase.skills.map((skill, skillIndex) => (
+                            <span
+                              key={skillIndex}
+                              className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm font-medium"
+                            >
+                              {skill}
+                            </span>
+                          ))}
+                        </div>
+                      </div>
                     </div>
-                  ))}
+                    {index < learningPath.length - 1 && (
+                      <div className="absolute left-8 top-16 w-0.5 h-16 bg-gradient-to-b from-blue-600 to-purple-600"></div>
+                    )}
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        )}
+
+        {activeTab === "curriculum" && (
+          <div>
+            <h3 className="text-3xl font-bold text-gray-900 text-center mb-12">Comprehensive Curriculum</h3>
+            <div className="space-y-8">
+              {curriculum.map((sem, index) => (
+                <div key={index} className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+                  <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-6">
+                    <h4 className="text-2xl font-bold text-gray-900">{sem.semester}</h4>
+                    <span className="inline-block bg-gradient-to-r from-blue-600 to-purple-600 text-white px-4 py-2 rounded-full text-sm font-medium">
+                      {sem.focus}
+                    </span>
+                  </div>
+
+                  <div className="grid md:grid-cols-2 gap-8">
+                    <div>
+                      <h5 className="font-semibold text-gray-800 mb-4">Core Subjects</h5>
+                      <div className="space-y-2">
+                        {sem.subjects.map((subject, subIndex) => (
+                          <div key={subIndex} className="flex items-center gap-3 bg-gray-50 rounded-lg p-3">
+                            <BookOpen className="h-5 w-5 text-blue-600" />
+                            <span className="text-gray-700 font-medium">{subject}</span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+
+                    <div>
+                      <h5 className="font-semibold text-gray-800 mb-4">Practical Projects</h5>
+                      <div className="space-y-2">
+                        {sem.projects.map((project, projIndex) => (
+                          <div key={projIndex} className="flex items-center gap-3 bg-green-50 rounded-lg p-3">
+                            <Code className="h-5 w-5 text-green-600" />
+                            <span className="text-gray-700 font-medium">{project}</span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
-        </div>
+        )}
 
-        {/* Student Projects */}
-        <div className="mb-16 bg-gray-50 rounded-xl p-8">
-          <h3 className="text-2xl font-bold text-blue-800 text-center mb-8">Student Projects</h3>
-          <div className="grid md:grid-cols-2 gap-6">
-            {projects.map((category, index) => (
-              <div key={index} className="bg-white rounded-lg p-6">
-                <h4 className="text-lg font-bold text-blue-800 mb-4">{category.category}</h4>
-                <ul className="space-y-2">
-                  {category.projects.map((project, idx) => (
-                    <li key={idx} className="flex items-start gap-2 text-sm text-gray-700">
-                      <Code className="h-4 w-4 text-blue-600 mt-0.5 shrink-0" />
-                      {project}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Career Opportunities */}
-        <div className="mb-16">
-          <h3 className="text-2xl font-bold text-blue-800 text-center mb-8">Career Opportunities</h3>
-          <div className="grid md:grid-cols-3 gap-6">
-            {careerPaths.map((path, index) => (
-              <div key={index} className="card p-6 text-center">
-                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <TrendingUp className="h-8 w-8 text-blue-600" />
+        {activeTab === "technologies" && (
+          <div>
+            <h3 className="text-3xl font-bold text-gray-900 text-center mb-12">Master Modern Technologies</h3>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+              {techStack.map((stack, index) => (
+                <div key={index} className="group">
+                  <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
+                    <div className="text-center mb-6">
+                      <div
+                        className={`w-16 h-16 bg-gradient-to-r ${stack.gradient} rounded-2xl flex items-center justify-center text-white mx-auto mb-4 shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-110`}
+                      >
+                        {stack.icon}
+                      </div>
+                      <h4 className="text-xl font-bold text-gray-900">{stack.name}</h4>
+                    </div>
+                    <div className="space-y-2">
+                      {stack.technologies.map((tech, techIndex) => (
+                        <div key={techIndex} className="flex items-center gap-2">
+                          <CheckCircle className="h-4 w-4 text-green-500" />
+                          <span className="text-gray-700">{tech}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
                 </div>
-                <h4 className="text-lg font-bold text-blue-800 mb-2">{path.level}</h4>
-                <div className="text-2xl font-bold text-green-600 mb-3">{path.package}</div>
-                <ul className="text-sm text-gray-600 space-y-1">
-                  {path.roles.map((role, idx) => (
-                    <li key={idx}>{role}</li>
-                  ))}
-                </ul>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
-        </div>
+        )}
 
-        {/* Program Benefits */}
-        <div className="bg-blue-600 rounded-xl p-8 text-white text-center">
-          <h3 className="text-2xl font-bold mb-4">Why Choose Our Full Stack Program?</h3>
-          <div className="grid md:grid-cols-3 gap-6 mb-6">
-            <div>
-              <Award className="h-8 w-8 mx-auto mb-2" />
-              <h4 className="font-semibold mb-2">Industry-Aligned Curriculum</h4>
-              <p className="text-blue-100 text-sm">
-                Curriculum designed with industry experts for real-world relevance
-              </p>
-            </div>
-            <div>
-              <Users className="h-8 w-8 mx-auto mb-2" />
-              <h4 className="font-semibold mb-2">Individual Mentorship</h4>
-              <p className="text-blue-100 text-sm">
-                Personal guidance from experienced faculty and industry professionals
-              </p>
-            </div>
-            <div>
-              <BookOpen className="h-8 w-8 mx-auto mb-2" />
-              <h4 className="font-semibold mb-2">Hands-On Projects</h4>
-              <p className="text-blue-100 text-sm">Real-world project experience throughout the program</p>
+        {activeTab === "careers" && (
+          <div>
+            <h3 className="text-3xl font-bold text-gray-900 text-center mb-12">Career Opportunities</h3>
+            <div className="grid md:grid-cols-2 gap-8">
+              {careerPaths.map((career, index) => (
+                <div key={index} className="group">
+                  <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
+                    <div className="flex items-start gap-4 mb-6">
+                      <div className="w-16 h-16 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl flex items-center justify-center text-white shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-110">
+                        <Briefcase className="h-8 w-8" />
+                      </div>
+                      <div className="flex-1">
+                        <h4 className="text-xl font-bold text-gray-900 mb-2">{career.title}</h4>
+                        <div className="text-2xl font-bold text-green-600 mb-2">{career.package}</div>
+                        <p className="text-sm text-gray-500">{career.companies}</p>
+                      </div>
+                    </div>
+
+                    <p className="text-gray-600 mb-4">{career.description}</p>
+
+                    <div className="space-y-2">
+                      <h5 className="font-semibold text-gray-800">Key Skills</h5>
+                      <div className="flex flex-wrap gap-2">
+                        {career.skills.map((skill, skillIndex) => (
+                          <span
+                            key={skillIndex}
+                            className="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-medium"
+                          >
+                            {skill}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
-          <button className="bg-orange-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-orange-600 transition-colors">
-            Apply for Full Stack Program
-          </button>
+        )}
+
+        {/* CTA Section */}
+        <div className="text-center mt-20">
+          <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-3xl p-12 text-white relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -translate-y-32 translate-x-32"></div>
+            <div className="absolute bottom-0 left-0 w-48 h-48 bg-white/10 rounded-full translate-y-24 -translate-x-24"></div>
+
+            <div className="relative z-10">
+              <h3 className="text-3xl font-bold mb-4">Ready to Start Your Full Stack Journey?</h3>
+              <p className="text-blue-100 text-lg mb-8 max-w-2xl mx-auto">
+                Join thousands of successful graduates who have launched their careers with our comprehensive Full Stack
+                Development program.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <button className="bg-white text-blue-600 hover:bg-gray-100 font-semibold px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 flex items-center justify-center">
+                  Apply Now - Limited Seats
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </button>
+                <button className="border-2 border-white text-white hover:bg-white/10 font-semibold px-8 py-4 rounded-xl transition-all duration-300">
+                  Schedule Campus Visit
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

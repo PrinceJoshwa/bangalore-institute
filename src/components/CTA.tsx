@@ -1,6 +1,6 @@
 export default function CTA() {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-8 bg-white">
+    <section className="w-full py-12 md:py-24 lg:py-32 bg-white">
       <div className="container mx-auto px-4">
         <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
           <div className="flex flex-col justify-center space-y-4">
@@ -9,7 +9,7 @@ export default function CTA() {
                 Your Future Starts Here
               </div>
               <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-blue-800">
-                Join Us at Bangalore Institute
+                Join Us at Starlight Institute
               </h2>
               <p className="max-w-[600px] text-gray-600 md:text-xl">
                 Take the first step towards a successful career. Apply now for the upcoming academic session and become
