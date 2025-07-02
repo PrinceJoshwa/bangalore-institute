@@ -397,10 +397,20 @@ export default function Header() {
                 onMouseEnter={() => setActiveDropdown("programs")}
                 onMouseLeave={() => setActiveDropdown(null)}
               >
-                <button className="flex items-center space-x-1 text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200">
+                {/* <button className="flex items-center space-x-1 text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200">
                   <span>Programs</span>
                   <ChevronDown className="h-4 w-4" />
-                </button>
+                </button> */}
+
+                <Link
+                to="/programs"
+                className={`flex items-center space-x-1 text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200 ${
+                  isActive("/faculty") ? "text-blue-600" : ""
+                }`}
+              >
+                Programs
+                <ChevronDown className="h-4 w-4" />
+              </Link>
                 {activeDropdown === "programs" && (
                   <div className="absolute top-full left-0 mt-2 w-80 bg-white rounded-xl shadow-2xl border border-gray-100 py-4 z-50">
                     <div className="px-4 pb-3 border-b border-gray-100">
@@ -503,7 +513,7 @@ export default function Header() {
                 <Link
                   to="/about"
                   className={`block text-gray-700 hover:text-blue-600 font-medium py-2 ${
-                    isActive("/about") ? "text-blue-600" : ""
+                    isActive("/abou2t") ? "text-blue-600" : ""
                   }`}
                   onClick={() => setIsMenuOpen(false)}
                 >
