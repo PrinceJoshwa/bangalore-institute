@@ -379,7 +379,7 @@ export default function Contact() {
     visitDate: "",
   })
 
-  const [activeTab, setActiveTab] = useState("contact")
+  // const [activeTab, setActiveTab] = useState("contact")
 
   const contactInfo = [
     {

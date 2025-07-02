@@ -396,7 +396,7 @@ export default function ProgramsOverview() {
 
         {/* Programs Grid */}
         <div className="grid lg:grid-cols-2 xl:grid-cols-3 gap-8 mb-16">
-          {filteredPrograms.map((program, index) => (
+          {filteredPrograms.map((program) => (
             <div key={program.id} className="group relative">
               {program.popular && (
                 <div className="absolute -top-3 left-6 z-10">

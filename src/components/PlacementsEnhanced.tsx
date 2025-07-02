@@ -1058,7 +1058,7 @@ export default function PlacementsEnhanced() {
 
   const industryVisitImages = [
     {
-      src: "/",
+      src: "/industrial (1).jpg",
       title: "Industry Visit - Angel One",
       description:
         "Students during industry visit at Angel One, gaining real-world insights into financial technology and trading platforms.",
@@ -1066,21 +1066,21 @@ export default function PlacementsEnhanced() {
       date: "March 2024",
     },
     {
-      src: "/IVindustrial(1).jpg",
+      src: "/industrial (2).jpg",
       title: "Interactive Session",
       description: "Engaging with industry professionals and learning about current market trends and opportunities.",
       location: "Corporate Office",
       date: "February 2024",
     },
     {
-      src: "/IVindustrial (2).jpg",
+      src: "/industrial (3).jpg",
       title: "Team Building",
       description: "Students showcasing teamwork and enthusiasm during corporate interaction sessions.",
       location: "Industry Campus",
       date: "January 2024",
     },
     {
-      src: "/IVindustrial (4).jpg",
+      src: "/industrial (4).jpg",
       title: "Professional Development",
       description: "Building professional networks and understanding industry expectations and requirements.",
       location: "Business Center",
