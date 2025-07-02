@@ -571,7 +571,7 @@ export default function Hero() {
             <div className="flex items-center space-x-4">
               <div className="w-3 h-3 bg-yellow-400 rounded-full animate-pulse"></div>
               <div>
-                <span className="font-bold">Admissions Open 2024!</span>
+                <span className="font-bold">Admissions Open 2025!</span>
                 <span className="ml-2">Limited seats available. Secure your future with just ₹10K booking.</span>
               </div>
             </div>
