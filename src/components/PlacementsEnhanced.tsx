@@ -1606,6 +1606,15 @@ export default function PlacementsEnhanced() {
     name: "DXC",
     logo: "https://res.cloudinary.com/dsj3kcbf4/image/upload/v1751981428/dxc-removebg-preview_c4uvkf.png",
   },
+  {
+    name: "Cisco",
+    logo: "https://res.cloudinary.com/dsj3kcbf4/image/upload/v1751984685/cisco-removebg-preview_oasdda.png",
+  },
+  {
+    name: "Juniper",
+    logo: "https://res.cloudinary.com/dsj3kcbf4/image/upload/v1751984685/juniper-removebg-preview_kbwaxb.png",
+  },
+
   ]
 
   const placementProcess = [
