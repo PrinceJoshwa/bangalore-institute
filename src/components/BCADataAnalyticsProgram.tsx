@@ -1,228 +1,3 @@
-// // import { Database, BarChart3, CheckCircle, Award, Users, BookOpen } from "lucide-react"
-
-// // export default function BCADataAnalyticsProgram() {
-// //   const careerTrack = [
-// //     {
-// //       semester: "Sem 1",
-// //       title: "Data Literacy",
-// //       description: "Build foundations in data science and statistical thinking",
-// //       topics: ["Statistics Fundamentals", "Excel Mastery", "Data Visualization Basics", "SQL Introduction"],
-// //     },
-// //     {
-// //       semester: "Sem 2",
-// //       title: "Data Wrangling",
-// //       description: "Learn data cleaning and preparation techniques",
-// //       topics: ["Python for Data Science", "Data Cleaning", "Pandas & NumPy", "Data Import/Export"],
-// //     },
-// //     {
-// //       semester: "Sem 3-4",
-// //       title: "Predictive Modeling",
-// //       description: "Build statistical models and machine learning algorithms",
-// //       topics: ["Machine Learning", "Statistical Modeling", "Regression Analysis", "Classification Algorithms"],
-// //     },
-// //     {
-// //       semester: "Sem 5-6",
-// //       title: "Advanced Analytics",
-// //       description: "Master complex analytical techniques and business intelligence",
-// //       topics: ["Deep Learning", "Time Series Analysis", "Business Intelligence", "Advanced Visualization"],
-// //     },
-// //   ]
-
-// //   const tools = [
-// //     {
-// //       category: "Programming",
-// //       tools: ["Python", "R", "SQL", "JavaScript"],
-// //     },
-// //     {
-// //       category: "Analytics",
-// //       tools: ["Tableau", "Power BI", "Excel", "SPSS"],
-// //     },
-// //     {
-// //       category: "Databases",
-// //       tools: ["MySQL", "PostgreSQL", "MongoDB", "Oracle"],
-// //     },
-// //     {
-// //       category: "Cloud & Big Data",
-// //       tools: ["AWS", "Azure", "Hadoop", "Spark"],
-// //     },
-// //   ]
-
-// //   const careerPaths = [
-// //     {
-// //       title: "Data Analyst",
-// //       package: "₹4-7 LPA",
-// //       description: "Analyze data to provide business insights and recommendations",
-// //       skills: ["SQL", "Excel", "Tableau", "Statistics"],
-// //     },
-// //     {
-// //       title: "Business Intelligence Analyst",
-// //       package: "₹6-10 LPA",
-// //       description: "Create dashboards and reports for business decision making",
-// //       skills: ["Power BI", "Data Modeling", "ETL", "Business Acumen"],
-// //     },
-// //     {
-// //       title: "Data Scientist",
-// //       package: "₹8-15 LPA",
-// //       description: "Build predictive models and machine learning solutions",
-// //       skills: ["Python", "Machine Learning", "Statistics", "Deep Learning"],
-// //     },
-// //   ]
-
-// //   return (
-// //     <section className="w-full py-12 md:py-24 lg:py-32 bg-white">
-// //       <div className="container mx-auto px-4">
-// //         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
-// //           <div className="space-y-2">
-// //             <div className="inline-block rounded-lg bg-blue-100 px-3 py-1 text-sm text-blue-600">
-// //               Data Analytics Specialization
-// //             </div>
-// //             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-blue-800">
-// //               BCA + Data Analytics + PGCCA
-// //             </h2>
-// //             <p className="max-w-3xl text-gray-600 md:text-xl">
-// //               Advanced analytics program with predictive modeling, data wrangling, and comprehensive analytical
-// //               techniques for data-driven careers.
-// //             </p>
-// //           </div>
-// //         </div>
-
-// //         {/* Program Overview */}
-// //         <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
-// //           <div>
-// //             <img
-// //               src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-// //               alt="Data analytics workspace with charts and graphs"
-// //               className="w-full h-[400px] object-cover rounded-xl shadow-lg"
-// //             />
-// //           </div>
-// //           <div className="space-y-6">
-// //             <div>
-// //               <h3 className="text-2xl font-bold text-blue-800 mb-4">Data Analyst Career Track</h3>
-// //               <p className="text-gray-600 mb-6">
-// //                 Each certification program includes 120-150 hours of specialized training designed to make you
-// //                 industry-ready with hands-on experience in real-world data projects.
-// //               </p>
-// //               <div className="space-y-4">
-// //                 <div className="flex items-center gap-3">
-// //                   <CheckCircle className="h-5 w-5 text-green-600" />
-// //                   <span className="text-gray-700">Advanced Analytics in Sem 5-6</span>
-// //                 </div>
-// //                 <div className="flex items-center gap-3">
-// //                   <CheckCircle className="h-5 w-5 text-green-600" />
-// //                   <span className="text-gray-700">Predictive Modeling in Sem 3-4</span>
-// //                 </div>
-// //                 <div className="flex items-center gap-3">
-// //                   <CheckCircle className="h-5 w-5 text-green-600" />
-// //                   <span className="text-gray-700">Data Wrangling in Sem 2</span>
-// //                 </div>
-// //                 <div className="flex items-center gap-3">
-// //                   <CheckCircle className="h-5 w-5 text-green-600" />
-// //                   <span className="text-gray-700">Data Literacy Foundations in Sem 1</span>
-// //                 </div>
-// //               </div>
-// //             </div>
-// //           </div>
-// //         </div>
-
-// //         {/* Learning Path */}
-// //         <div className="mb-16">
-// //           <h3 className="text-2xl font-bold text-blue-800 text-center mb-8">Data Analytics Learning Path</h3>
-// //           <div className="grid md:grid-cols-2 gap-6">
-// //             {careerTrack.map((track, index) => (
-// //               <div key={index} className="card p-6 hover:shadow-lg transition-shadow">
-// //                 <div className="flex items-center gap-3 mb-4">
-// //                   <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
-// //                     <Database className="h-6 w-6 text-blue-600" />
-// //                   </div>
-// //                   <div>
-// //                     <div className="text-sm text-blue-600 font-semibold">{track.semester}</div>
-// //                     <h4 className="text-lg font-bold text-blue-800">{track.title}</h4>
-// //                   </div>
-// //                 </div>
-// //                 <p className="text-gray-600 text-sm mb-4">{track.description}</p>
-// //                 <div className="flex flex-wrap gap-2">
-// //                   {track.topics.map((topic, idx) => (
-// //                     <span key={idx} className="bg-blue-50 text-blue-700 px-2 py-1 rounded text-xs">
-// //                       {topic}
-// //                     </span>
-// //                   ))}
-// //                 </div>
-// //               </div>
-// //             ))}
-// //           </div>
-// //         </div>
-
-// //         {/* Tools & Technologies */}
-// //         <div className="mb-16 bg-gray-50 rounded-xl p-8">
-// //           <h3 className="text-2xl font-bold text-blue-800 text-center mb-8">Essential Tools & Technologies</h3>
-// //           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-// //             {tools.map((category, index) => (
-// //               <div key={index} className="bg-white rounded-lg p-6 text-center">
-// //                 <h4 className="text-lg font-bold text-blue-800 mb-4">{category.category}</h4>
-// //                 <div className="space-y-2">
-// //                   {category.tools.map((tool, idx) => (
-// //                     <div key={idx} className="bg-blue-50 text-blue-700 px-3 py-1 rounded text-sm">
-// //                       {tool}
-// //                     </div>
-// //                   ))}
-// //                 </div>
-// //               </div>
-// //             ))}
-// //           </div>
-// //         </div>
-
-// //         {/* Career Opportunities */}
-// //         <div className="mb-16">
-// //           <h3 className="text-2xl font-bold text-blue-800 text-center mb-8">Career Opportunities</h3>
-// //           <div className="grid md:grid-cols-3 gap-6">
-// //             {careerPaths.map((career, index) => (
-// //               <div key={index} className="card p-6 text-center hover:shadow-lg transition-shadow">
-// //                 <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-// //                   <BarChart3 className="h-8 w-8 text-blue-600" />
-// //                 </div>
-// //                 <h4 className="text-lg font-bold text-blue-800 mb-2">{career.title}</h4>
-// //                 <div className="text-2xl font-bold text-green-600 mb-3">{career.package}</div>
-// //                 <p className="text-gray-600 text-sm mb-4">{career.description}</p>
-// //                 <div className="flex flex-wrap gap-1 justify-center">
-// //                   {career.skills.map((skill, idx) => (
-// //                     <span key={idx} className="bg-green-100 text-green-700 px-2 py-1 rounded text-xs">
-// //                       {skill}
-// //                     </span>
-// //                   ))}
-// //                 </div>
-// //               </div>
-// //             ))}
-// //           </div>
-// //         </div>
-
-// //         {/* Program Benefits */}
-// //         <div className="bg-blue-600 rounded-xl p-8 text-white text-center">
-// //           <h3 className="text-2xl font-bold mb-4">Why Choose Data Analytics at BIMSR?</h3>
-// //           <div className="grid md:grid-cols-3 gap-6 mb-6">
-// //             <div>
-// //               <Award className="h-8 w-8 mx-auto mb-2" />
-// //               <h4 className="font-semibold mb-2">Industry-Ready Curriculum</h4>
-// //               <p className="text-blue-100 text-sm">120-150 hours of specialized training with real-world projects</p>
-// //             </div>
-// //             <div>
-// //               <Users className="h-8 w-8 mx-auto mb-2" />
-// //               <h4 className="font-semibold mb-2">Expert Mentorship</h4>
-// //               <p className="text-blue-100 text-sm">Learn from industry professionals and data science experts</p>
-// //             </div>
-// //             <div>
-// //               <BookOpen className="h-8 w-8 mx-auto mb-2" />
-// //               <h4 className="font-semibold mb-2">Hands-On Learning</h4>
-// //               <p className="text-blue-100 text-sm">Work on real datasets and build a professional portfolio</p>
-// //             </div>
-// //           </div>
-// //           <button className="bg-orange-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-orange-600 transition-colors">
-// //             Apply for Data Analytics Program
-// //           </button>
-// //         </div>
-// //       </div>
-// //     </section>
-// //   )
-// // }
 
 // "use client"
 
@@ -230,7 +5,6 @@
 // import {
 //   Database,
 //   BarChart3,
-//   CheckCircle,
 //   Award,
 //   Users,
 //   BookOpen,
@@ -238,124 +12,166 @@
 //   ArrowRight,
 //   Play,
 //   TrendingUp,
+//   Zap,
+//   Target,
 // } from "lucide-react"
 
 // export default function BCADataAnalyticsProgram() {
 //   const [activeTab, setActiveTab] = useState("overview")
 
-//   const careerTrack = [
+//   const programDuration = [
 //     {
-//       semester: "Sem 1",
-//       title: "Data Literacy",
-//       description: "Build foundations in data science and statistical thinking",
-//       topics: ["Statistics Fundamentals", "Excel Mastery", "Data Visualization Basics", "SQL Introduction"],
-//       gradient: "from-blue-500 to-cyan-500",
+//       title: "BCA (Undergraduate Degree)",
+//       description: "3-year degree course at BIMSR affiliated with Bengaluru North University",
+//       duration: "3 Years",
+//       color: "from-blue-600 to-cyan-600",
+//       icon: <BookOpen className="h-8 w-8" />,
 //     },
 //     {
-//       semester: "Sem 2",
-//       title: "Data Wrangling",
-//       description: "Learn data cleaning and preparation techniques",
-//       topics: ["Python for Data Science", "Data Cleaning", "Pandas & NumPy", "Data Import/Export"],
-//       gradient: "from-green-500 to-emerald-500",
+//       title: "Data Analyst Professional Certification",
+//       description:
+//         "Professional certification for career development delivered by real practitioners from the industry to prepare students to solve real-world problems",
+//       duration: "Integrated",
+//       color: "from-purple-600 to-pink-600",
+//       icon: <BarChart3 className="h-8 w-8" />,
 //     },
 //     {
-//       semester: "Sem 3-4",
-//       title: "Predictive Modeling",
-//       description: "Build statistical models and machine learning algorithms",
-//       topics: ["Machine Learning", "Statistical Modeling", "Regression Analysis", "Classification Algorithms"],
-//       gradient: "from-purple-500 to-pink-500",
-//     },
-//     {
-//       semester: "Sem 5-6",
-//       title: "Advanced Analytics",
-//       description: "Master complex analytical techniques and business intelligence",
-//       topics: ["Deep Learning", "Time Series Analysis", "Business Intelligence", "Advanced Visualization"],
-//       gradient: "from-red-500 to-rose-500",
+//       title: "PGCCA (Postgraduate Certificate)",
+//       description:
+//         "If students qualify, BIMSR offers a 100% fully funded scholarship for the students to pursue a 1-year post-graduation program",
+//       duration: "4th Year",
+//       color: "from-green-600 to-emerald-600",
+//       icon: <Award className="h-8 w-8" />,
 //     },
 //   ]
 
-//   const tools = [
+//   const industrySkills = [
 //     {
-//       category: "Programming",
-//       tools: ["Python", "R", "SQL", "JavaScript"],
+//       category: "Python for Data Analysis",
+//       description: "Master Python programming for data manipulation and analysis",
+//       tools: ["Pandas", "NumPy", "Matplotlib", "Seaborn"],
 //       icon: <Database className="h-8 w-8" />,
 //       gradient: "from-blue-500 to-cyan-500",
 //     },
 //     {
-//       category: "Analytics",
-//       tools: ["Tableau", "Power BI", "Excel", "SPSS"],
-//       icon: <BarChart3 className="h-8 w-8" />,
+//       category: "SQL & Database Management",
+//       description: "Learn database querying and management techniques",
+//       tools: ["MySQL", "PostgreSQL", "MongoDB", "SQLite"],
+//       icon: <Database className="h-8 w-8" />,
 //       gradient: "from-green-500 to-emerald-500",
 //     },
 //     {
-//       category: "Databases",
-//       tools: ["MySQL", "PostgreSQL", "MongoDB", "Oracle"],
-//       icon: <Database className="h-8 w-8" />,
+//       category: "Data Visualization",
+//       description: "Create compelling visualizations and dashboards",
+//       tools: ["Power BI", "Tableau", "Excel", "Google Sheets"],
+//       icon: <BarChart3 className="h-8 w-8" />,
 //       gradient: "from-purple-500 to-pink-500",
 //     },
 //     {
-//       category: "Cloud & Big Data",
-//       tools: ["AWS", "Azure", "Hadoop", "Spark"],
+//       category: "Business Intelligence Tools",
+//       description: "Advanced analytics and reporting automation",
+//       tools: ["Statistics", "Probability", "Data Cleaning", "Dashboarding"],
 //       icon: <TrendingUp className="h-8 w-8" />,
 //       gradient: "from-red-500 to-rose-500",
 //     },
 //   ]
 
-//   const careerPaths = [
+//   const careerOpportunities = [
 //     {
 //       title: "Data Analyst",
-//       package: "₹4-7 LPA",
-//       description: "Analyze data to provide business insights and recommendations",
-//       skills: ["SQL", "Excel", "Tableau", "Statistics"],
-//       companies: ["TCS", "Infosys", "Wipro", "Accenture"],
+//       package: "₹3.5-9 LPA",
+//       description:
+//         "Interpret complex data sets to identify trends, create reports, and help businesses make data-backed decisions",
+//       skills: ["Python", "SQL", "Excel", "Statistics"],
+//       companies: ["IBM", "Samsung", "Infosys", "TCS"],
 //     },
 //     {
-//       title: "Business Intelligence Analyst",
-//       package: "₹6-10 LPA",
-//       description: "Create dashboards and reports for business decision making",
-//       skills: ["Power BI", "Data Modeling", "ETL", "Business Acumen"],
-//       companies: ["IBM", "Cognizant", "HCL", "Capgemini"],
+//       title: "Business Analyst",
+//       package: "₹4-8 LPA",
+//       description:
+//         "Bridge the gap between IT and business by analyzing processes, interpreting data, and proposing data-driven strategies",
+//       skills: ["Business Intelligence", "Data Analysis", "Process Mapping", "Requirements Gathering"],
+//       companies: ["Accenture", "Cognizant", "HCL", "Capgemini"],
 //     },
 //     {
-//       title: "Data Scientist",
-//       package: "₹8-15 LPA",
-//       description: "Build predictive models and machine learning solutions",
-//       skills: ["Python", "Machine Learning", "Statistics", "Deep Learning"],
-//       companies: ["Amazon", "Microsoft", "Google", "Flipkart"],
+//       title: "Data Visualization Specialist",
+//       package: "₹5-10 LPA",
+//       description:
+//         "Present data through dashboards and visuals using tools like Power BI and Tableau to support executive decisions",
+//       skills: ["Power BI", "Tableau", "Dashboard Design", "Data Storytelling"],
+//       companies: ["Microsoft", "Google", "Amazon", "Flipkart"],
 //     },
 //     {
-//       title: "Machine Learning Engineer",
-//       package: "₹10-18 LPA",
-//       description: "Deploy and maintain ML models in production environments",
-//       skills: ["Python", "MLOps", "Cloud Platforms", "Docker"],
+//       title: "Junior Data Scientist",
+//       package: "₹6-12 LPA",
+//       description: "Assist in building machine learning models, running statistical analyses, and preparing datasets",
+//       skills: ["Machine Learning", "Python", "Statistics", "Data Mining"],
 //       companies: ["Netflix", "Uber", "Swiggy", "Paytm"],
 //     },
 //   ]
 
-//   const industryApplications = [
+//   const studentJourney = [
 //     {
-//       industry: "Healthcare",
-//       applications: ["Patient Analytics", "Drug Discovery", "Medical Imaging", "Epidemic Modeling"],
-//       icon: "🏥",
-//       color: "from-green-500 to-emerald-500",
-//     },
-//     {
-//       industry: "Finance",
-//       applications: ["Risk Assessment", "Fraud Detection", "Algorithmic Trading", "Credit Scoring"],
-//       icon: "💰",
+//       phase: "Academic & Project-Based Learning",
+//       description:
+//         "Semester-wise academic modules aligned with industry standards. Hands-on labs, coding bootcamps, and domain-specific workshops. Real-world projects and mini internships every year to apply classroom knowledge",
+//       icon: <BookOpen className="h-8 w-8" />,
 //       color: "from-blue-500 to-cyan-500",
 //     },
 //     {
-//       industry: "E-commerce",
-//       applications: ["Recommendation Systems", "Price Optimization", "Customer Segmentation", "Inventory Management"],
-//       icon: "🛒",
+//       phase: "Skill Building & Industry Exposure",
+//       description:
+//         "Technical skill development through live coding, hackathons, and project showcases. Regular masterclasses by industry professionals and alumni. Industrial visits and participation in tech summits and developer meets",
+//       icon: <TrendingUp className="h-8 w-8" />,
 //       color: "from-purple-500 to-pink-500",
 //     },
 //     {
-//       industry: "Technology",
-//       applications: ["User Behavior Analysis", "A/B Testing", "Performance Optimization", "Predictive Maintenance"],
-//       icon: "💻",
+//       phase: "Career Development & Placement Prep",
+//       description:
+//         "Soft skills training including group discussions, presentations, and interviews. Resume building, LinkedIn profile curation, and GitHub portfolio guidance. On-campus mock interviews and company-specific training sessions",
+//       icon: <Users className="h-8 w-8" />,
+//       color: "from-green-500 to-emerald-500",
+//     },
+//     {
+//       phase: "Graduation & Career Launch",
+//       description:
+//         "Final semester capstone project with industry mentors. Assistance with job applications, off-campus drives, and startup opportunities. Placement with top IT firms, product companies, or support for higher studies and entrepreneurship",
+//       icon: <Award className="h-8 w-8" />,
 //       color: "from-red-500 to-rose-500",
+//     },
+//   ]
+
+//   const placementStats = [
+//     { label: "Placement Rate", value: "92%", description: "of students placed in top companies in 2024" },
+//     { label: "Highest Package", value: "9 LPA", description: "Premium offers from leading companies" },
+//     { label: "Average Package", value: "7 LPA", description: "Strong industry alignment" },
+//     { label: "Lowest Package", value: "3.5 LPA", description: "Entry-level positions" },
+//   ]
+
+//   const hiringPartners = [
+//     {
+//       category: "Technology Giants",
+//       description:
+//         "Leading tech companies like IBM, Samsung, and Infosys actively recruit our graduates for cutting-edge roles",
+//       companies: ["IBM", "Samsung", "Infosys", "TCS"],
+//     },
+//     {
+//       category: "Manufacturing Leaders",
+//       description:
+//         "Industrial powerhouses including Bosch, Honeywell, and Royal Enfield offer diverse engineering opportunities",
+//       companies: ["Bosch", "Honeywell", "Royal Enfield", "L&T"],
+//     },
+//     {
+//       category: "Consulting Firms",
+//       description:
+//         "Global consulting leaders like Accenture, Cognizant, and HCL provide strategic career pathways for graduates",
+//       companies: ["Accenture", "Cognizant", "HCL", "Wipro"],
+//     },
+//     {
+//       category: "Infrastructure Giants",
+//       description:
+//         "Major corporations like Volvo, Jindal Steel, and Sobha Developers create opportunities across multiple sectors",
+//       companies: ["Volvo", "Jindal Steel", "Sobha", "Mahindra"],
 //     },
 //   ]
 
@@ -375,80 +191,85 @@
 //             <br />
 //             <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">+ PGCCA</span>
 //           </h1>
-//           <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-//             Advanced analytics program with predictive modeling, data wrangling, and comprehensive analytical techniques
-//             for data-driven careers in the digital economy.
+//           <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed mb-8">
+//             BIMSR's program supports students to secure Data Analyst roles and pursue funded advanced degrees. This
+//             integrated program combines a Bachelor of Computer Applications (BCA) degree with specialized Data Analytics
+//             training and an optional Post Graduate Certificate in Computer Applications (PGCCA).
 //           </p>
+//           <div className="flex flex-col sm:flex-row gap-4 justify-center">
+//             <button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 rounded-xl font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 flex items-center justify-center">
+//               Apply Now
+//               <ArrowRight className="ml-2 h-5 w-5" />
+//             </button>
+//             <button className="border-2 border-gray-300 hover:bg-gray-50 text-gray-700 px-8 py-4 rounded-xl font-semibold transition-all duration-200 flex items-center justify-center">
+//               <Play className="mr-2 h-5 w-5" />
+//               Watch Demo
+//             </button>
+//           </div>
 //         </div>
 
-//         {/* Hero Section */}
-//         <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
-//           <div className="relative">
-//             <div className="relative overflow-hidden rounded-3xl shadow-2xl">
-//               <img
-//                 src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
-//                 alt="Data analytics workspace with charts and graphs"
-//                 className="w-full h-[500px] object-cover"
-//               />
-//               <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
-
-//               {/* Floating Stats */}
-//               <div className="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur-sm rounded-2xl p-6 shadow-xl">
-//                 <div className="grid grid-cols-3 gap-4 text-center">
-//                   <div>
-//                     <div className="text-2xl font-bold text-blue-600">120-150</div>
-//                     <div className="text-sm text-gray-600">Training Hours</div>
-//                   </div>
-//                   <div>
-//                     <div className="text-2xl font-bold text-purple-600">₹8-15L</div>
-//                     <div className="text-sm text-gray-600">Avg Package</div>
-//                   </div>
-//                   <div>
-//                     <div className="text-2xl font-bold text-green-600">95%</div>
-//                     <div className="text-sm text-gray-600">Placement Rate</div>
-//                   </div>
-//                 </div>
+//         {/* Course Placement Stats */}
+//         <div className="mb-20">
+//           <h3 className="text-3xl font-bold text-gray-900 text-center mb-12">Course Placement Stats</h3>
+//           <div className="grid md:grid-cols-4 gap-8">
+//             {placementStats.map((stat, index) => (
+//               <div key={index} className="bg-white rounded-2xl p-8 shadow-lg text-center border border-gray-100">
+//                 <div className="text-4xl font-bold text-blue-600 mb-2">{stat.value}</div>
+//                 <div className="text-lg font-semibold text-gray-900 mb-2">{stat.label}</div>
+//                 <div className="text-sm text-gray-600">{stat.description}</div>
 //               </div>
-//             </div>
+//             ))}
 //           </div>
+//         </div>
 
-//           <div className="space-y-8">
-//             <div>
-//               <h2 className="text-3xl font-bold text-gray-900 mb-4">Data Analyst Career Track</h2>
-//               <p className="text-lg text-gray-600 leading-relaxed mb-6">
-//                 Each certification program includes 120-150 hours of specialized training designed to make you
-//                 industry-ready with hands-on experience in real-world data projects and cutting-edge analytics tools.
-//               </p>
+//         {/* Fee Structure */}
+//         <div className="mb-24">
+//           <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-3xl p-12 text-white relative overflow-hidden">
+//             <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -translate-y-32 translate-x-32"></div>
+//             <div className="absolute bottom-0 left-0 w-48 h-48 bg-white/10 rounded-full translate-y-24 -translate-x-24"></div>
 
-//               <div className="space-y-4">
-//                 <div className="flex items-center gap-3">
-//                   <CheckCircle className="h-5 w-5 text-green-600" />
-//                   <span className="text-gray-700">Advanced Analytics in Sem 5-6</span>
+//             <div className="relative z-10">
+//               <div className="text-center mb-12">
+//                 <h2 className="text-4xl font-bold mb-6">Fee Structure</h2>
+//                 <p className="text-xl text-blue-100 max-w-3xl mx-auto">
+//                   BCA + Data Analytics + PGCBA - Our comprehensive 4-year program offers transparent pricing with
+//                   flexible payment options
+//                 </p>
+//               </div>
+//               <div className="grid md:grid-cols-4 gap-8">
+//                 <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 text-center">
+//                   <div className="text-3xl font-bold mb-2">₹25,000</div>
+//                   <div className="text-blue-100 font-medium mb-1">Admission Fee</div>
+//                   <div className="text-sm text-blue-200">One-time payment due at enrollment</div>
 //                 </div>
-//                 <div className="flex items-center gap-3">
-//                   <CheckCircle className="h-5 w-5 text-green-600" />
-//                   <span className="text-gray-700">Predictive Modeling in Sem 3-4</span>
+//                 <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 text-center">
+//                   <div className="text-3xl font-bold mb-2">₹2,00,000</div>
+//                   <div className="text-blue-100 font-medium mb-1">First Year</div>
+//                   <div className="text-sm text-blue-200">BCA program fees covering fundamental coursework</div>
 //                 </div>
-//                 <div className="flex items-center gap-3">
-//                   <CheckCircle className="h-5 w-5 text-green-600" />
-//                   <span className="text-gray-700">Data Wrangling in Sem 2</span>
+//                 <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 text-center">
+//                   <div className="text-3xl font-bold mb-2">₹85,000</div>
+//                   <div className="text-blue-100 font-medium mb-1">2nd & 3rd Year</div>
+//                   <div className="text-sm text-blue-200">Each year specialization modules</div>
 //                 </div>
-//                 <div className="flex items-center gap-3">
-//                   <CheckCircle className="h-5 w-5 text-green-600" />
-//                   <span className="text-gray-700">Data Literacy Foundations in Sem 1</span>
+//                 <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 text-center">
+//                   <div className="text-3xl font-bold text-green-300 mb-2">100%</div>
+//                   <div className="text-blue-100 font-medium mb-1">4th Year Scholarship</div>
+//                   <div className="text-sm text-blue-200">PGCCA fully sponsored</div>
 //                 </div>
 //               </div>
-//             </div>
-
-//             <div className="flex space-x-4">
-//               <button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 rounded-xl font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 flex items-center">
-//                 Apply Now
-//                 <ArrowRight className="ml-2 h-5 w-5" />
-//               </button>
-//               <button className="border-2 border-gray-300 hover:bg-gray-50 text-gray-700 px-8 py-4 rounded-xl font-semibold transition-all duration-200 flex items-center">
-//                 <Play className="mr-2 h-5 w-5" />
-//                 Watch Demo
-//               </button>
+//               <div className="text-center mt-8">
+//                 <div className="text-5xl font-bold mb-2">₹3,95,000</div>
+//                 <div className="text-blue-100 text-xl">Total 4-Year Program Investment</div>
+//                 <div className="text-sm text-blue-200 mt-4 space-y-1">
+//                   <div>• Semester-wise installments available</div>
+//                   <div>• Education loan assistance provided</div>
+//                   <div>• Merit-based scholarships for qualifying students</div>
+//                   <div>• No cost EMI's are provided</div>
+//                   <div>• Professional certification is included in the course fee</div>
+//                   <div>• All fees are inclusive of Tools and certifications offered</div>
+//                 </div>
+//               </div>
 //             </div>
 //           </div>
 //         </div>
@@ -458,10 +279,10 @@
 //           <div className="bg-white rounded-2xl p-2 shadow-lg border border-gray-100">
 //             <div className="flex space-x-2">
 //               {[
-//                 { id: "overview", name: "Learning Path" },
-//                 { id: "tools", name: "Tools & Tech" },
+//                 { id: "overview", name: "Program Duration" },
+//                 { id: "journey", name: "Student Journey" },
+//                 { id: "skills", name: "Industry Skills" },
 //                 { id: "careers", name: "Career Paths" },
-//                 { id: "applications", name: "Industry Applications" },
 //               ].map((tab) => (
 //                 <button
 //                   key={tab.id}
@@ -482,34 +303,29 @@
 //         {/* Tab Content */}
 //         {activeTab === "overview" && (
 //           <div>
-//             <h3 className="text-3xl font-bold text-gray-900 text-center mb-12">Data Analytics Learning Path</h3>
-//             <div className="grid md:grid-cols-2 gap-8">
-//               {careerTrack.map((track, index) => (
+//             <h3 className="text-3xl font-bold text-gray-900 text-center mb-12">Program Duration</h3>
+//             <div className="space-y-8">
+//               {programDuration.map((program, index) => (
 //                 <div key={index} className="group">
-//                   <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
-//                     <div className="flex items-center gap-4 mb-6">
-//                       <div
-//                         className={`w-16 h-16 bg-gradient-to-r ${track.gradient} rounded-2xl flex items-center justify-center text-white shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-110`}
-//                       >
-//                         <Database className="h-8 w-8" />
-//                       </div>
-//                       <div>
-//                         <div className="text-sm text-blue-600 font-semibold">{track.semester}</div>
-//                         <h4 className="text-xl font-bold text-gray-900">{track.title}</h4>
-//                       </div>
-//                     </div>
-//                     <p className="text-gray-600 mb-6">{track.description}</p>
-//                     <div className="space-y-2">
-//                       <h5 className="font-semibold text-gray-800">Key Topics</h5>
-//                       <div className="flex flex-wrap gap-2">
-//                         {track.topics.map((topic, idx) => (
-//                           <span
-//                             key={idx}
-//                             className="bg-blue-50 text-blue-700 px-3 py-1 rounded-full text-sm font-medium"
-//                           >
-//                             {topic}
-//                           </span>
-//                         ))}
+//                   <div className="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-gray-100 relative overflow-hidden">
+//                     <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-blue-50 to-purple-50 rounded-full -translate-y-16 translate-x-16"></div>
+
+//                     <div className="relative z-10">
+//                       <div className="flex items-start space-x-6">
+//                         <div
+//                           className={`w-16 h-16 bg-gradient-to-r ${program.color} rounded-2xl flex items-center justify-center text-white shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-110`}
+//                         >
+//                           {program.icon}
+//                         </div>
+//                         <div className="flex-1">
+//                           <div className="flex items-center space-x-4 mb-4">
+//                             <h3 className="text-2xl font-bold text-gray-900">{program.title}</h3>
+//                             <span className="bg-gradient-to-r from-blue-100 to-purple-100 text-blue-700 px-4 py-2 rounded-full text-sm font-semibold">
+//                               {program.duration}
+//                             </span>
+//                           </div>
+//                           <p className="text-gray-600 leading-relaxed">{program.description}</p>
+//                         </div>
 //                       </div>
 //                     </div>
 //                   </div>
@@ -519,25 +335,62 @@
 //           </div>
 //         )}
 
-//         {activeTab === "tools" && (
+//         {activeTab === "journey" && (
 //           <div>
-//             <h3 className="text-3xl font-bold text-gray-900 text-center mb-12">Essential Tools & Technologies</h3>
-//             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-//               {tools.map((category, index) => (
+//             <h3 className="text-3xl font-bold text-gray-900 text-center mb-12">Student Journey</h3>
+//             <p className="text-lg text-gray-600 text-center mb-12 max-w-4xl mx-auto">
+//               By the end of the journey, students are job-ready, with placement assistance and a skill set aligned with
+//               current industry demands, opening doors to careers in top IT companies and startups.
+//             </p>
+//             <div className="grid md:grid-cols-2 gap-8">
+//               {studentJourney.map((phase, index) => (
 //                 <div key={index} className="group">
-//                   <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 text-center">
-//                     <div
-//                       className={`w-16 h-16 bg-gradient-to-r ${category.gradient} rounded-2xl flex items-center justify-center mx-auto mb-6 text-white shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-110`}
-//                     >
-//                       {category.icon}
+//                   <div className="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-gray-100">
+//                     <div className="flex items-start space-x-6">
+//                       <div
+//                         className={`w-16 h-16 bg-gradient-to-r ${phase.color} rounded-2xl flex items-center justify-center text-white shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-110`}
+//                       >
+//                         {phase.icon}
+//                       </div>
+//                       <div className="flex-1">
+//                         <h4 className="text-xl font-bold text-gray-900 mb-4">{phase.phase}</h4>
+//                         <p className="text-gray-600 leading-relaxed">{phase.description}</p>
+//                       </div>
 //                     </div>
-//                     <h4 className="text-xl font-bold text-gray-900 mb-6">{category.category}</h4>
-//                     <div className="space-y-3">
-//                       {category.tools.map((tool, idx) => (
-//                         <div key={idx} className="bg-gray-50 text-gray-700 px-4 py-2 rounded-lg font-medium">
-//                           {tool}
-//                         </div>
-//                       ))}
+//                   </div>
+//                 </div>
+//               ))}
+//             </div>
+//           </div>
+//         )}
+
+//         {activeTab === "skills" && (
+//           <div>
+//             <h3 className="text-3xl font-bold text-gray-900 text-center mb-12">Industry Skills Acquired</h3>
+//             <div className="grid md:grid-cols-2 gap-8">
+//               {industrySkills.map((category, index) => (
+//                 <div key={index} className="group">
+//                   <div className="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-gray-100 text-center relative overflow-hidden">
+//                     <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-blue-50 to-purple-50 rounded-full -translate-y-12 translate-x-12"></div>
+
+//                     <div className="relative z-10">
+//                       <div
+//                         className={`w-20 h-20 bg-gradient-to-r ${category.gradient} rounded-2xl flex items-center justify-center mx-auto mb-6 text-white shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-110`}
+//                       >
+//                         {category.icon}
+//                       </div>
+//                       <h3 className="text-xl font-bold text-gray-900 mb-4">{category.category}</h3>
+//                       <p className="text-gray-600 mb-6">{category.description}</p>
+//                       <div className="space-y-3">
+//                         {category.tools.map((tool, idx) => (
+//                           <div
+//                             key={idx}
+//                             className="bg-gradient-to-r from-blue-50 to-purple-50 text-blue-700 px-4 py-2 rounded-full text-sm font-semibold"
+//                           >
+//                             {tool}
+//                           </div>
+//                         ))}
+//                       </div>
 //                     </div>
 //                   </div>
 //                 </div>
@@ -549,48 +402,56 @@
 //         {activeTab === "careers" && (
 //           <div>
 //             <h3 className="text-3xl font-bold text-gray-900 text-center mb-12">Career Opportunities</h3>
+//             <p className="text-lg text-gray-600 text-center mb-12">
+//               This specialized program equips students with technical and analytical skills to thrive in data-driven
+//               roles:
+//             </p>
 //             <div className="grid md:grid-cols-2 gap-8">
-//               {careerPaths.map((career, index) => (
+//               {careerOpportunities.map((career, index) => (
 //                 <div key={index} className="group">
-//                   <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
-//                     <div className="flex items-start gap-4 mb-6">
-//                       <div className="w-16 h-16 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl flex items-center justify-center text-white shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-110">
-//                         <BarChart3 className="h-8 w-8" />
-//                       </div>
-//                       <div className="flex-1">
-//                         <h4 className="text-xl font-bold text-gray-900 mb-2">{career.title}</h4>
-//                         <div className="text-2xl font-bold text-green-600 mb-2">{career.package}</div>
-//                       </div>
-//                     </div>
+//                   <div className="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-gray-100 relative overflow-hidden">
+//                     <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-blue-50 to-purple-50 rounded-full -translate-y-12 translate-x-12"></div>
 
-//                     <p className="text-gray-600 mb-4">{career.description}</p>
-
-//                     <div className="space-y-4">
-//                       <div>
-//                         <h5 className="font-semibold text-gray-800 mb-2">Key Skills</h5>
-//                         <div className="flex flex-wrap gap-2">
-//                           {career.skills.map((skill, idx) => (
-//                             <span
-//                               key={idx}
-//                               className="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-medium"
-//                             >
-//                               {skill}
-//                             </span>
-//                           ))}
+//                     <div className="relative z-10">
+//                       <div className="text-center mb-6">
+//                         <div className="w-20 h-20 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl flex items-center justify-center mx-auto mb-4 text-white shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-110">
+//                           <BarChart3 className="h-10 w-10" />
+//                         </div>
+//                         <h3 className="text-2xl font-bold text-gray-900 mb-2">{career.title}</h3>
+//                         <div className="text-3xl font-bold bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent mb-4">
+//                           {career.package}
 //                         </div>
 //                       </div>
 
-//                       <div>
-//                         <h5 className="font-semibold text-gray-800 mb-2">Top Hiring Companies</h5>
-//                         <div className="flex flex-wrap gap-2">
-//                           {career.companies.map((company, idx) => (
-//                             <span
-//                               key={idx}
-//                               className="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-medium"
-//                             >
-//                               {company}
-//                             </span>
-//                           ))}
+//                       <p className="text-gray-600 mb-6 leading-relaxed">{career.description}</p>
+
+//                       <div className="space-y-4">
+//                         <div>
+//                           <h4 className="font-semibold text-gray-900 mb-3">Key Skills</h4>
+//                           <div className="flex flex-wrap gap-2">
+//                             {career.skills.map((skill, idx) => (
+//                               <span
+//                                 key={idx}
+//                                 className="bg-gradient-to-r from-green-100 to-emerald-100 text-green-700 px-3 py-1 rounded-full text-sm font-semibold"
+//                               >
+//                                 {skill}
+//                               </span>
+//                             ))}
+//                           </div>
+//                         </div>
+
+//                         <div>
+//                           <h4 className="font-semibold text-gray-900 mb-3">Top Hiring Companies</h4>
+//                           <div className="flex flex-wrap gap-2">
+//                             {career.companies.map((company, idx) => (
+//                               <span
+//                                 key={idx}
+//                                 className="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-medium"
+//                               >
+//                                 {company}
+//                               </span>
+//                             ))}
+//                           </div>
 //                         </div>
 //                       </div>
 //                     </div>
@@ -601,67 +462,115 @@
 //           </div>
 //         )}
 
-//         {activeTab === "applications" && (
-//           <div>
-//             <h3 className="text-3xl font-bold text-gray-900 text-center mb-12">Industry Applications</h3>
-//             <div className="grid md:grid-cols-2 gap-8">
-//               {industryApplications.map((industry, index) => (
-//                 <div key={index} className="group">
-//                   <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
-//                     <div className="flex items-center gap-4 mb-6">
-//                       <div
-//                         className={`w-16 h-16 bg-gradient-to-r ${industry.color} rounded-2xl flex items-center justify-center text-2xl shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-110`}
-//                       >
-//                         {industry.icon}
-//                       </div>
-//                       <h4 className="text-2xl font-bold text-gray-900">{industry.industry}</h4>
-//                     </div>
-
-//                     <div className="space-y-3">
-//                       {industry.applications.map((app, idx) => (
-//                         <div key={idx} className="flex items-center gap-3 bg-gray-50 rounded-lg p-3">
-//                           <CheckCircle className="h-5 w-5 text-green-600" />
-//                           <span className="text-gray-700 font-medium">{app}</span>
-//                         </div>
-//                       ))}
-//                     </div>
-//                   </div>
+//         {/* Our Hiring Partners */}
+//         <div className="mt-24 mb-20">
+//           <h3 className="text-3xl font-bold text-gray-900 text-center mb-12">Our Hiring Partners</h3>
+//           <div className="grid md:grid-cols-2 gap-8">
+//             {hiringPartners.map((partner, index) => (
+//               <div key={index} className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+//                 <h4 className="text-xl font-bold text-gray-900 mb-4">{partner.category}</h4>
+//                 <p className="text-gray-600 mb-6">{partner.description}</p>
+//                 <div className="flex flex-wrap gap-3">
+//                   {partner.companies.map((company, idx) => (
+//                     <span
+//                       key={idx}
+//                       className="bg-gradient-to-r from-blue-100 to-purple-100 text-blue-700 px-4 py-2 rounded-full text-sm font-semibold"
+//                     >
+//                       {company}
+//                     </span>
+//                   ))}
 //                 </div>
-//               ))}
-//             </div>
+//               </div>
+//             ))}
 //           </div>
-//         )}
+//         </div>
 
-//         {/* CTA Section */}
-//         <div className="text-center mt-20">
-//           <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-3xl p-12 text-white relative overflow-hidden">
+//         {/* Sports Excellence Programme */}
+//         <div className="mb-20">
+//           <div className="bg-gradient-to-r from-green-600 to-blue-600 rounded-3xl p-12 text-white relative overflow-hidden">
 //             <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -translate-y-32 translate-x-32"></div>
 //             <div className="absolute bottom-0 left-0 w-48 h-48 bg-white/10 rounded-full translate-y-24 -translate-x-24"></div>
 
 //             <div className="relative z-10">
-//               <h3 className="text-3xl font-bold mb-4">Why Choose Data Analytics at BIMSR?</h3>
-//               <div className="grid md:grid-cols-3 gap-8 mb-8">
+//               <h3 className="text-3xl font-bold mb-8 text-center">Sports Excellence Programme</h3>
+//               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 //                 <div className="text-center">
-//                   <Award className="h-12 w-12 mx-auto mb-4" />
-//                   <h4 className="font-semibold mb-2">Industry-Ready Curriculum</h4>
-//                   <p className="text-blue-100 text-sm">
-//                     120-150 hours of specialized training with real-world projects
+//                   <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
+//                     <Zap className="h-8 w-8" />
+//                   </div>
+//                   <h4 className="font-semibold mb-2">FIFA-Level Football Training</h4>
+//                   <p className="text-green-100 text-sm">
+//                     Students in our sports quota receive elite training from globally qualified coaches
 //                   </p>
 //                 </div>
 //                 <div className="text-center">
-//                   <Users className="h-12 w-12 mx-auto mb-4" />
-//                   <h4 className="font-semibold mb-2">Expert Mentorship</h4>
-//                   <p className="text-blue-100 text-sm">Learn from industry professionals and data science experts</p>
+//                   <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
+//                     <Award className="h-8 w-8" />
+//                   </div>
+//                   <h4 className="font-semibold mb-2">Complete Support Package</h4>
+//                   <p className="text-green-100 text-sm">
+//                     BIMSR provides playing kits, travel expenses, and accommodation for tournaments
+//                   </p>
 //                 </div>
 //                 <div className="text-center">
-//                   <BookOpen className="h-12 w-12 mx-auto mb-4" />
-//                   <h4 className="font-semibold mb-2">Hands-On Learning</h4>
-//                   <p className="text-blue-100 text-sm">Work on real datasets and build a professional portfolio</p>
+//                   <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
+//                     <Target className="h-8 w-8" />
+//                   </div>
+//                   <h4 className="font-semibold mb-2">International Exposure</h4>
+//                   <p className="text-green-100 text-sm">
+//                     Get to play in championships and national tournaments fully supported by BIMSR
+//                   </p>
 //                 </div>
 //               </div>
-//               <button className="bg-white text-blue-600 hover:bg-gray-100 font-semibold px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 flex items-center justify-center mx-auto">
-//                 Apply for Data Analytics Program
-//                 <ArrowRight className="ml-2 h-5 w-5" />
+//             </div>
+//           </div>
+//         </div>
+
+//         {/* CTA Section */}
+//         <div className="text-center">
+//           <div className="bg-gradient-to-r from-slate-900 to-slate-800 rounded-3xl p-12 text-white relative overflow-hidden">
+//             <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20"></div>
+//             <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -translate-y-32 translate-x-32"></div>
+//             <div className="absolute bottom-0 left-0 w-48 h-48 bg-white/5 rounded-full translate-y-24 -translate-x-24"></div>
+
+//             <div className="relative z-10">
+//               <h2 className="text-4xl font-bold mb-6">Contact Us Today</h2>
+//               <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
+//                 Take the first step toward your educational transformation. Our admissions team is ready to guide you
+//                 through the enrollment process.
+//               </p>
+//               <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+//                 <div className="text-center">
+//                   <div className="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+//                     <Users className="h-8 w-8 text-blue-400" />
+//                   </div>
+//                   <div className="font-semibold mb-1">Call Our Admissions Office</div>
+//                   <div className="text-sm text-gray-400">8970002004</div>
+//                 </div>
+//                 <div className="text-center">
+//                   <div className="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+//                     <Database className="h-8 w-8 text-purple-400" />
+//                   </div>
+//                   <div className="font-semibold mb-1">Email Inquiries</div>
+//                   <div className="text-sm text-gray-400">admissions@bangaloreinstitutions.com</div>
+//                 </div>
+//                 <div className="text-center">
+//                   <div className="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+//                     <BookOpen className="h-8 w-8 text-green-400" />
+//                   </div>
+//                   <div className="font-semibold mb-1">Visit Our Campus</div>
+//                   <div className="text-sm text-gray-400">Schedule a tour</div>
+//                 </div>
+//                 <div className="text-center">
+//                   <div className="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+//                     <TrendingUp className="h-8 w-8 text-red-400" />
+//                   </div>
+//                   <div className="font-semibold mb-1">Apply Online</div>
+//                   <div className="text-sm text-gray-400">Complete your application</div>
+//                 </div>
+//               </div>
+//               <button className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-10 py-4 rounded-2xl font-bold text-lg shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
+//                 Apply for BCA Data Analytics Program
 //               </button>
 //             </div>
 //           </div>
@@ -674,249 +583,135 @@
 "use client"
 
 import { useState } from "react"
-import {
-  Database,
-  BarChart3,
-  CheckCircle,
-  Award,
-  Users,
-  BookOpen,
-  Star,
-  ArrowRight,
-  Play,
-  TrendingUp,
-} from "lucide-react"
+import { Link } from "react-router-dom"
+import { ArrowRight, CheckCircle, BarChart3 } from "lucide-react"
 
 export default function BCADataAnalyticsProgram() {
   const [activeTab, setActiveTab] = useState("overview")
 
-  const careerTrack = [
-    {
-      semester: "Sem 1",
-      title: "Data Literacy",
-      description: "Build foundations in data science and statistical thinking",
-      topics: ["Statistics Fundamentals", "Excel Mastery", "Data Visualization Basics", "SQL Introduction"],
-      gradient: "from-blue-500 to-cyan-500",
-    },
-    {
-      semester: "Sem 2",
-      title: "Data Wrangling",
-      description: "Learn data cleaning and preparation techniques",
-      topics: ["Python for Data Science", "Data Cleaning", "Pandas & NumPy", "Data Import/Export"],
-      gradient: "from-green-500 to-emerald-500",
-    },
-    {
-      semester: "Sem 3-4",
-      title: "Predictive Modeling",
-      description: "Build statistical models and machine learning algorithms",
-      topics: ["Machine Learning", "Statistical Modeling", "Regression Analysis", "Classification Algorithms"],
-      gradient: "from-purple-500 to-pink-500",
-    },
-    {
-      semester: "Sem 5-6",
-      title: "Advanced Analytics",
-      description: "Master complex analytical techniques and business intelligence",
-      topics: ["Deep Learning", "Time Series Analysis", "Business Intelligence", "Advanced Visualization"],
-      gradient: "from-red-500 to-rose-500",
-    },
+  const programHighlights = [
+    "120-150 hours specialized training",
+    "Python & SQL certification included",
+    "Predictive modeling and machine learning",
+    "92% placement rate with 7 LPA average",
+    "Data visualization tools mastery",
+    "Industry datasets and real-world projects",
+    "Tableau and Power BI certifications",
+    "Statistical analysis and business intelligence",
   ]
 
-  const tools = [
-    {
-      category: "Programming",
-      tools: ["Python", "R", "SQL", "JavaScript"],
-      icon: <Database className="h-8 w-8" />,
-      gradient: "from-blue-500 to-cyan-500",
-    },
-    {
-      category: "Analytics",
-      tools: ["Tableau", "Power BI", "Excel", "SPSS"],
-      icon: <BarChart3 className="h-8 w-8" />,
-      gradient: "from-green-500 to-emerald-500",
-    },
-    {
-      category: "Databases",
-      tools: ["MySQL", "PostgreSQL", "MongoDB", "Oracle"],
-      icon: <Database className="h-8 w-8" />,
-      gradient: "from-purple-500 to-pink-500",
-    },
-    {
-      category: "Cloud & Big Data",
-      tools: ["AWS", "Azure", "Hadoop", "Spark"],
-      icon: <TrendingUp className="h-8 w-8" />,
-      gradient: "from-red-500 to-rose-500",
-    },
+  const careerOpportunities = [
+    { role: "Data Analyst", package: "₹3.5-9 LPA", companies: ["IBM", "Microsoft", "Amazon"] },
+    { role: "Business Analyst", package: "₹4-8 LPA", companies: ["Deloitte", "Accenture", "TCS"] },
+    { role: "Data Visualization Specialist", package: "₹5-10 LPA", companies: ["Tableau", "Qlik", "SAS"] },
+    { role: "Junior Data Scientist", package: "₹6-12 LPA", companies: ["Google", "Facebook", "Netflix"] },
+    { role: "Market Research Analyst", package: "₹4-7 LPA", companies: ["Nielsen", "Kantar", "IPSOS"] },
+    { role: "Database Administrator", package: "₹5-9 LPA", companies: ["Oracle", "MongoDB", "MySQL"] },
   ]
 
-  const careerPaths = [
-    {
-      title: "Data Analyst",
-      package: "₹4-7 LPA",
-      description: "Analyze data to provide business insights and recommendations",
-      skills: ["SQL", "Excel", "Tableau", "Statistics"],
-      companies: ["TCS", "Infosys", "Wipro", "Accenture"],
-    },
-    {
-      title: "Business Intelligence Analyst",
-      package: "₹6-10 LPA",
-      description: "Create dashboards and reports for business decision making",
-      skills: ["Power BI", "Data Modeling", "ETL", "Business Acumen"],
-      companies: ["IBM", "Cognizant", "HCL", "Capgemini"],
-    },
-    {
-      title: "Data Scientist",
-      package: "₹8-15 LPA",
-      description: "Build predictive models and machine learning solutions",
-      skills: ["Python", "Machine Learning", "Statistics", "Deep Learning"],
-      companies: ["Amazon", "Microsoft", "Google", "Flipkart"],
-    },
-    {
-      title: "Machine Learning Engineer",
-      package: "₹10-18 LPA",
-      description: "Deploy and maintain ML models in production environments",
-      skills: ["Python", "MLOps", "Cloud Platforms", "Docker"],
-      companies: ["Netflix", "Uber", "Swiggy", "Paytm"],
-    },
-  ]
+  const feeStructure = {
+    admissionFee: "₹25,000",
+    firstYear: "₹2,00,000",
+    secondYear: "₹85,000",
+    thirdYear: "₹85,000",
+    fourthYear: "100% Scholarship",
+    totalFee: "₹3,95,000",
+  }
 
-  const industryApplications = [
-    {
-      industry: "Healthcare",
-      applications: ["Patient Analytics", "Drug Discovery", "Medical Imaging", "Epidemic Modeling"],
-      icon: "🏥",
-      color: "from-green-500 to-emerald-500",
-    },
-    {
-      industry: "Finance",
-      applications: ["Risk Assessment", "Fraud Detection", "Algorithmic Trading", "Credit Scoring"],
-      icon: "💰",
-      color: "from-blue-500 to-cyan-500",
-    },
-    {
-      industry: "E-commerce",
-      applications: ["Recommendation Systems", "Price Optimization", "Customer Segmentation", "Inventory Management"],
-      icon: "🛒",
-      color: "from-purple-500 to-pink-500",
-    },
-    {
-      industry: "Technology",
-      applications: ["User Behavior Analysis", "A/B Testing", "Performance Optimization", "Predictive Maintenance"],
-      icon: "💻",
-      color: "from-red-500 to-rose-500",
-    },
-  ]
+  const placementStats = {
+    placementRate: "92%",
+    averagePackage: "₹7 LPA",
+    highestPackage: "₹9 LPA",
+    minimumPackage: "₹3.5 LPA",
+  }
 
   return (
-    <section className="py-20 bg-gradient-to-br from-slate-50 via-white to-blue-50">
-      <div className="container mx-auto px-4">
-        {/* Header */}
-        <div className="text-center mb-16">
-          <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-blue-600/10 to-purple-600/10 backdrop-blur-sm border border-blue-200/50 rounded-full px-6 py-3 mb-6">
-            <Star className="h-5 w-5 text-blue-600" />
-            <span className="text-blue-700 font-semibold">Data Analytics Specialization</span>
-          </div>
-          <h1 className="text-4xl lg:text-6xl font-bold mb-6">
-            <span className="bg-gradient-to-r from-slate-900 to-slate-700 bg-clip-text text-transparent">
-              BCA + Data Analytics
-            </span>
-            <br />
-            <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">+ PGCCA</span>
-          </h1>
-          <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-            Advanced analytics program with predictive modeling, data wrangling, and comprehensive analytical techniques
-            for data-driven careers in the digital economy.
-          </p>
-        </div>
-
-        {/* Hero Section */}
-        <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
-          <div className="relative">
-            <div className="relative overflow-hidden rounded-3xl shadow-2xl">
-              <img
-                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
-                alt="Data analytics workspace with charts and graphs"
-                className="w-full h-[500px] object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
-
-              {/* Floating Stats */}
-              <div className="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur-sm rounded-2xl p-6 shadow-xl">
-                <div className="grid grid-cols-3 gap-4 text-center">
-                  <div>
-                    <div className="text-2xl font-bold text-blue-600">120-150</div>
-                    <div className="text-sm text-gray-600">Training Hours</div>
-                  </div>
-                  <div>
-                    <div className="text-2xl font-bold text-purple-600">₹8-15L</div>
-                    <div className="text-sm text-gray-600">Avg Package</div>
-                  </div>
-                  <div>
-                    <div className="text-2xl font-bold text-green-600">95%</div>
-                    <div className="text-sm text-gray-600">Placement Rate</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="space-y-8">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-purple-50 to-pink-50">
+      {/* Hero Section */}
+      <div className="relative bg-gradient-to-r from-purple-900 via-pink-800 to-red-900 text-white py-20">
+        <div className="absolute inset-0 bg-black/20"></div>
+        <div className="relative container mx-auto px-4">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">Data Analyst Career Track</h2>
-              <p className="text-lg text-gray-600 leading-relaxed mb-6">
-                Each certification program includes 120-150 hours of specialized training designed to make you
-                industry-ready with hands-on experience in real-world data projects and cutting-edge analytics tools.
+              <div className="inline-flex items-center gap-2 bg-purple-600/20 backdrop-blur-sm border border-purple-400/30 rounded-full px-6 py-3 text-sm font-medium mb-6">
+                <BarChart3 className="h-5 w-5 text-purple-400" />
+                High Growth Field
+              </div>
+              <h1 className="text-5xl lg:text-6xl font-bold mb-6">
+                BCA + Data Analytics
+                <span className="block text-3xl lg:text-4xl text-purple-300 font-normal mt-2">+ PGCCA</span>
+              </h1>
+              <p className="text-xl text-purple-100 mb-8 leading-relaxed">
+                Master data science with Python, SQL, and machine learning. Transform raw data into actionable insights
+                with our comprehensive analytics program.
               </p>
 
-              <div className="space-y-4">
-                <div className="flex items-center gap-3">
-                  <CheckCircle className="h-5 w-5 text-green-600" />
-                  <span className="text-gray-700">Advanced Analytics in Sem 5-6</span>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8">
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-yellow-400">{placementStats.placementRate}</div>
+                  <div className="text-purple-200 text-sm">Placement Rate</div>
                 </div>
-                <div className="flex items-center gap-3">
-                  <CheckCircle className="h-5 w-5 text-green-600" />
-                  <span className="text-gray-700">Predictive Modeling in Sem 3-4</span>
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-green-400">{placementStats.averagePackage}</div>
+                  <div className="text-purple-200 text-sm">Average Package</div>
                 </div>
-                <div className="flex items-center gap-3">
-                  <CheckCircle className="h-5 w-5 text-green-600" />
-                  <span className="text-gray-700">Data Wrangling in Sem 2</span>
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-pink-400">{placementStats.highestPackage}</div>
+                  <div className="text-purple-200 text-sm">Highest Package</div>
                 </div>
-                <div className="flex items-center gap-3">
-                  <CheckCircle className="h-5 w-5 text-green-600" />
-                  <span className="text-gray-700">Data Literacy Foundations in Sem 1</span>
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-blue-400">4 Years</div>
+                  <div className="text-purple-200 text-sm">Duration</div>
                 </div>
+              </div>
+
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Link
+                  to="/admission"
+                  className="bg-gradient-to-r from-green-600 to-blue-600 hover:from-green-700 hover:to-blue-700 text-white px-8 py-4 rounded-xl font-semibold text-lg shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 inline-flex items-center justify-center"
+                >
+                  Apply for Course
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Link>
+                <Link
+                  to="/contact"
+                  className="border-2 border-white/30 hover:bg-white/10 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 inline-flex items-center justify-center"
+                >
+                  Schedule Campus Visit
+                </Link>
               </div>
             </div>
 
-            <div className="flex space-x-4">
-              <button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 rounded-xl font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 flex items-center">
-                Apply Now
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </button>
-              <button className="border-2 border-gray-300 hover:bg-gray-50 text-gray-700 px-8 py-4 rounded-xl font-semibold transition-all duration-200 flex items-center">
-                <Play className="mr-2 h-5 w-5" />
-                Watch Demo
-              </button>
+            <div className="relative">
+              <img
+                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+                alt="Data Analytics"
+                className="rounded-2xl shadow-2xl"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent rounded-2xl"></div>
             </div>
           </div>
         </div>
+      </div>
 
+      <div className="container mx-auto px-4 py-16">
         {/* Tab Navigation */}
         <div className="flex justify-center mb-12">
           <div className="bg-white rounded-2xl p-2 shadow-lg border border-gray-100">
-            <div className="flex space-x-2">
+            <div className="flex flex-wrap gap-2">
               {[
-                { id: "overview", name: "Learning Path" },
+                { id: "overview", name: "Overview" },
+                { id: "curriculum", name: "Curriculum" },
+                { id: "placements", name: "Placements" },
                 { id: "tools", name: "Tools & Tech" },
-                { id: "careers", name: "Career Paths" },
-                { id: "applications", name: "Industry Applications" },
               ].map((tab) => (
                 <button
                   key={tab.id}
                   onClick={() => setActiveTab(tab.id)}
                   className={`px-6 py-3 rounded-xl font-semibold transition-all duration-300 ${
                     activeTab === tab.id
-                      ? "bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-lg"
-                      : "text-gray-600 hover:text-blue-600 hover:bg-gray-50"
+                      ? "bg-gradient-to-r from-purple-600 to-pink-600 text-white shadow-lg"
+                      : "text-gray-600 hover:text-purple-600 hover:bg-gray-50"
                   }`}
                 >
                   {tab.name}
@@ -928,192 +723,138 @@ export default function BCADataAnalyticsProgram() {
 
         {/* Tab Content */}
         {activeTab === "overview" && (
-          <div>
-            <h3 className="text-3xl font-bold text-gray-900 text-center mb-12">Data Analytics Learning Path</h3>
-            <div className="grid md:grid-cols-2 gap-8">
-              {careerTrack.map((track, index) => (
-                <div key={index} className="group">
-                  <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
-                    <div className="flex items-center gap-4 mb-6">
-                      <div
-                        className={`w-16 h-16 bg-gradient-to-r ${track.gradient} rounded-2xl flex items-center justify-center text-white shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-110`}
-                      >
-                        <Database className="h-8 w-8" />
-                      </div>
-                      <div>
-                        <div className="text-sm text-blue-600 font-semibold">{track.semester}</div>
-                        <h4 className="text-xl font-bold text-gray-900">{track.title}</h4>
-                      </div>
+          <div className="space-y-16">
+            {/* Program Highlights */}
+            <div>
+              <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Program Highlights</h2>
+              <div className="grid md:grid-cols-2 gap-8">
+                <div className="space-y-4">
+                  {programHighlights.slice(0, 4).map((highlight, index) => (
+                    <div key={index} className="flex items-start space-x-3 p-4 bg-white rounded-xl shadow-md h-20">
+                      <CheckCircle className="h-6 w-6 text-green-600 mt-1 shrink-0" />
+                      <span className="text-gray-700 font-medium">{highlight}</span>
                     </div>
-                    <p className="text-gray-600 mb-6">{track.description}</p>
-                    <div className="space-y-2">
-                      <h5 className="font-semibold text-gray-800">Key Topics</h5>
-                      <div className="flex flex-wrap gap-2">
-                        {track.topics.map((topic, idx) => (
-                          <span
-                            key={idx}
-                            className="bg-blue-50 text-blue-700 px-3 py-1 rounded-full text-sm font-medium"
-                          >
-                            {topic}
-                          </span>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
+                  ))}
                 </div>
-              ))}
-            </div>
-          </div>
-        )}
-
-        {activeTab === "tools" && (
-          <div>
-            <h3 className="text-3xl font-bold text-gray-900 text-center mb-12">Essential Tools & Technologies</h3>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-              {tools.map((category, index) => (
-                <div key={index} className="group">
-                  <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 text-center">
-                    <div
-                      className={`w-16 h-16 bg-gradient-to-r ${category.gradient} rounded-2xl flex items-center justify-center mx-auto mb-6 text-white shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-110`}
-                    >
-                      {category.icon}
+                <div className="space-y-4">
+                  {programHighlights.slice(4).map((highlight, index) => (
+                    <div key={index} className="flex items-start space-x-3 p-4 bg-white rounded-xl shadow-md h-20">
+                      <CheckCircle className="h-6 w-6 text-green-600 mt-1 shrink-0" />
+                      <span className="text-gray-700 font-medium">{highlight}</span>
                     </div>
-                    <h4 className="text-xl font-bold text-gray-900 mb-6">{category.category}</h4>
-                    <div className="space-y-3">
-                      {category.tools.map((tool, idx) => (
-                        <div key={idx} className="bg-gray-50 text-gray-700 px-4 py-2 rounded-lg font-medium">
-                          {tool}
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        )}
-
-        {activeTab === "careers" && (
-          <div>
-            <h3 className="text-3xl font-bold text-gray-900 text-center mb-12">Career Opportunities</h3>
-            <div className="grid md:grid-cols-2 gap-8">
-              {careerPaths.map((career, index) => (
-                <div key={index} className="group">
-                  <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
-                    <div className="flex items-start gap-4 mb-6">
-                      <div className="w-16 h-16 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl flex items-center justify-center text-white shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-110">
-                        <BarChart3 className="h-8 w-8" />
-                      </div>
-                      <div className="flex-1">
-                        <h4 className="text-xl font-bold text-gray-900 mb-2">{career.title}</h4>
-                        <div className="text-2xl font-bold text-green-600 mb-2">{career.package}</div>
-                      </div>
-                    </div>
-
-                    <p className="text-gray-600 mb-4">{career.description}</p>
-
-                    <div className="space-y-4">
-                      <div>
-                        <h5 className="font-semibold text-gray-800 mb-2">Key Skills</h5>
-                        <div className="flex flex-wrap gap-2">
-                          {career.skills.map((skill, idx) => (
-                            <span
-                              key={idx}
-                              className="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-medium"
-                            >
-                              {skill}
-                            </span>
-                          ))}
-                        </div>
-                      </div>
-
-                      <div>
-                        <h5 className="font-semibold text-gray-800 mb-2">Top Hiring Companies</h5>
-                        <div className="flex flex-wrap gap-2">
-                          {career.companies.map((company, idx) => (
-                            <span
-                              key={idx}
-                              className="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-medium"
-                            >
-                              {company}
-                            </span>
-                          ))}
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        )}
-
-        {activeTab === "applications" && (
-          <div>
-            <h3 className="text-3xl font-bold text-gray-900 text-center mb-12">Industry Applications</h3>
-            <div className="grid md:grid-cols-2 gap-8">
-              {industryApplications.map((industry, index) => (
-                <div key={index} className="group">
-                  <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
-                    <div className="flex items-center gap-4 mb-6">
-                      <div
-                        className={`w-16 h-16 bg-gradient-to-r ${industry.color} rounded-2xl flex items-center justify-center text-2xl shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-110`}
-                      >
-                        {industry.icon}
-                      </div>
-                      <h4 className="text-2xl font-bold text-gray-900">{industry.industry}</h4>
-                    </div>
-
-                    <div className="space-y-3">
-                      {industry.applications.map((app, idx) => (
-                        <div key={idx} className="flex items-center gap-3 bg-gray-50 rounded-lg p-3">
-                          <CheckCircle className="h-5 w-5 text-green-600" />
-                          <span className="text-gray-700 font-medium">{app}</span>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        )}
-
-        {/* CTA Section */}
-        <div className="text-center mt-20">
-          <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-3xl p-12 text-white relative overflow-hidden">
-            <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -translate-y-32 translate-x-32"></div>
-            <div className="absolute bottom-0 left-0 w-48 h-48 bg-white/10 rounded-full translate-y-24 -translate-x-24"></div>
-
-            <div className="relative z-10">
-              <h3 className="text-3xl font-bold mb-4">Why Choose Data Analytics at BIMSR?</h3>
-              <div className="grid md:grid-cols-3 gap-8 mb-8">
-                <div className="text-center">
-                  <Award className="h-12 w-12 mx-auto mb-4" />
-                  <h4 className="font-semibold mb-2">Industry-Ready Curriculum</h4>
-                  <p className="text-blue-100 text-sm">
-                    120-150 hours of specialized training with real-world projects
-                  </p>
-                </div>
-                <div className="text-center">
-                  <Users className="h-12 w-12 mx-auto mb-4" />
-                  <h4 className="font-semibold mb-2">Expert Mentorship</h4>
-                  <p className="text-blue-100 text-sm">Learn from industry professionals and data science experts</p>
-                </div>
-                <div className="text-center">
-                  <BookOpen className="h-12 w-12 mx-auto mb-4" />
-                  <h4 className="font-semibold mb-2">Hands-On Learning</h4>
-                  <p className="text-blue-100 text-sm">Work on real datasets and build a professional portfolio</p>
+                  ))}
                 </div>
               </div>
-              <button className="bg-white text-blue-600 hover:bg-gray-100 font-semibold px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 flex items-center justify-center mx-auto">
-                Apply for Data Analytics Program
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </button>
+            </div>
+
+            {/* Fee Structure */}
+            <div className="bg-gradient-to-r from-purple-600 to-pink-600 rounded-3xl p-8 text-white">
+              <div className="text-center mb-8">
+                <h3 className="text-3xl font-bold mb-4">Investment Details</h3>
+                <p className="text-purple-100 text-lg">Transparent fee structure with flexible payment options</p>
+              </div>
+
+              <div className="grid md:grid-cols-3 gap-6 mb-8">
+                <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 text-center h-32 flex flex-col justify-center">
+                  <div className="text-3xl font-bold">{feeStructure.totalFee}</div>
+                  <div className="text-purple-100">Total Program Fee</div>
+                </div>
+                <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 text-center h-32 flex flex-col justify-center">
+                  <div className="text-3xl font-bold">{feeStructure.fourthYear}</div>
+                  <div className="text-purple-100">4th Year Scholarship</div>
+                </div>
+                <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 text-center h-32 flex flex-col justify-center">
+                  <div className="text-3xl font-bold">0%</div>
+                  <div className="text-purple-100">Interest EMI</div>
+                </div>
+              </div>
+
+              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6">
+                <h4 className="text-xl font-bold mb-4 text-center">Year-wise Fee Breakdown</h4>
+                <div className="grid md:grid-cols-5 gap-4">
+                  <div className="text-center">
+                    <div className="text-lg font-bold">{feeStructure.admissionFee}</div>
+                    <div className="text-purple-100 text-sm">Admission Fee</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-lg font-bold">{feeStructure.firstYear}</div>
+                    <div className="text-purple-100 text-sm">First Year</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-lg font-bold">{feeStructure.secondYear}</div>
+                    <div className="text-purple-100 text-sm">Second Year</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-lg font-bold">{feeStructure.thirdYear}</div>
+                    <div className="text-purple-100 text-sm">Third Year</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-lg font-bold text-green-300">{feeStructure.fourthYear}</div>
+                    <div className="text-purple-100 text-sm">Fourth Year</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {activeTab === "placements" && (
+          <div className="space-y-16">
+            {/* Career Opportunities */}
+            <div>
+              <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Career Opportunities</h2>
+              <div className="grid md:grid-cols-2 gap-6">
+                {careerOpportunities.map((career, index) => (
+                  <div key={index} className="bg-white rounded-xl p-6 shadow-lg border border-gray-100 h-32">
+                    <div className="flex justify-between items-start mb-3">
+                      <h4 className="font-bold text-gray-900">{career.role}</h4>
+                      <span className="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-semibold">
+                        {career.package}
+                      </span>
+                    </div>
+                    <div className="flex flex-wrap gap-2">
+                      {career.companies.map((company, idx) => (
+                        <span key={idx} className="bg-purple-100 text-purple-700 px-2 py-1 rounded-full text-xs">
+                          {company}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* Call to Action */}
+        <div className="mt-16 bg-gradient-to-r from-green-600 to-blue-600 rounded-3xl p-12 text-white relative overflow-hidden">
+          <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -translate-y-32 translate-x-32"></div>
+          <div className="absolute bottom-0 left-0 w-48 h-48 bg-white/10 rounded-full translate-y-24 -translate-x-24"></div>
+
+          <div className="relative z-10 text-center">
+            <h2 className="text-4xl font-bold mb-6">Ready to Become a Data Analyst?</h2>
+            <p className="text-xl text-green-100 mb-8 max-w-3xl mx-auto">
+              Join our comprehensive data analytics program and launch your career in the fastest-growing field with
+              guaranteed placement assistance.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link
+                to="/admission"
+                className="bg-white text-green-600 px-8 py-4 rounded-xl font-semibold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl inline-flex items-center justify-center"
+              >
+                <span className="mr-2">Apply Now</span>
+                <ArrowRight className="h-5 w-5" />
+              </Link>
+              <Link
+                to="/contact"
+                className="bg-white/20 backdrop-blur-sm text-white px-8 py-4 rounded-xl font-semibold hover:bg-white/30 transition-all duration-300 border border-white/30 inline-flex items-center justify-center"
+              >
+                Schedule Campus Visit
+              </Link>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
   )
 }
