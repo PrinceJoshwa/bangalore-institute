@@ -1604,7 +1604,7 @@ export default function PlacementsEnhanced() {
   },
   {
     name: "DXC",
-    logo: "https://res.cloudinary.com/dsj3kcbf4/image/upload/v1749473596/24-removebg-preview_zqmkz5.png",
+    logo: "https://res.cloudinary.com/dsj3kcbf4/image/upload/v1751981428/dxc-removebg-preview_c4uvkf.png",
   },
   ]
 
