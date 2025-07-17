@@ -244,7 +244,7 @@ export default function Footer() {
   <div className="mt-10 flex flex-col items-center space-y-4">
     <p className="text-white font-semibold">Our Education Partners</p>
     <div className="flex flex-wrap justify-center items-center gap-6">
-      <img src="/Zell.png" alt="Partner 1" className="h-10 object-contain" />
+      <img src="/zelllogo.jpeg" alt="Partner 1" className="h-10 object-contain" />
       <img src="/enormayu.png" alt="Partner 2" className="h-10 object-contain" />
       {/* Add more logos as needed */}
     </div>
