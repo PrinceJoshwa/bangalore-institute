@@ -1208,11 +1208,11 @@ export default function Header() {
   const isActive = (path: string) => location.pathname === path
 
   const programs = [
-    { name: "BCA + Full Stack + PGCCA", href: "programs/bca-full-stack", fee: "₹2.5L Total" },
-    { name: "BCA + Data Analytics + PGCCA", href: "programs/bca-data-analytics", fee: "₹2.5L Total" },
-    { name: "BCA + Digital Marketing + PGCCA", href: "programs/bca-digital-marketing", fee: "₹2.5L Total" },
-    { name: "BBA + Digital Marketing + PGCBA", href: "programs/bba-digital-marketing", fee: "₹2.3L Total" },
-    { name: "BCOM + ACCA + PGCFM", href: "programs/bcom-acca", fee: "₹2.8L Total" },
+    { name: "BCA + Full Stack + PGCCA", href: "programs/bca-full-stack", fee: "₹3.95L Total" },
+    { name: "BCA + Data Analytics + PGCCA", href: "programs/bca-data-analytics", fee: "₹3.95L Total" },
+    { name: "BCA + Digital Marketing + PGCCA", href: "programs/bca-digital-marketing", fee: "₹3.95L Total" },
+    { name: "BBA + Digital Marketing + PGCBA", href: "programs/bba-digital-marketing", fee: "₹3.65L Total" },
+    { name: "BCOM + ACCA + PGCFM", href: "programs/bcom-acca", fee: "₹4.25L Total" },
   ]
 
   const handleBrochureClick = () => {

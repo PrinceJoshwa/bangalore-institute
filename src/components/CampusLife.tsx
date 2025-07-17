@@ -748,19 +748,22 @@ export default function CampusLife() {
 
   const campusImages = [
     {
-      src: "https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      // src: "https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      src:"/Bimsr.webp",
       title: "Main Campus Building",
       category: "facilities",
     },
     {
       // src: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       // src: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80",
-      src:"https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80",
+      // src:"https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80",
+       src:"/library.jpg",
       title: "Modern Library",
       category: "facilities",
     },
     {
-      src: "https://images.unsplash.com/photo-1544717297-fa95b6ee9643?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      // src: "https://images.unsplash.com/photo-1544717297-fa95b6ee9643?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+       src:"/Computer.webp",
       title: "Computer Labs",
       category: "facilities",
     },
@@ -771,13 +774,15 @@ export default function CampusLife() {
     },
     {
       // src: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-      src: "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      // src: "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+       src:"/hostel.webp",
       title: "Student Hostel",
       category: "facilities",
     },
     {
       // src: "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      src: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+      // src: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+       src:"/activities.webp",
       title: "Student Activities",
       category: "events",
     },
@@ -788,36 +793,33 @@ export default function CampusLife() {
     },
   ]
 
-  const facilities = [
-    {
-      icon: BookOpen,
-      title: "Modern Library",
-      description: "24/7 access to digital and physical resources with over 50,000 books and journals",
-      image:
-        "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80",
-    },
-    {
-      icon: Wifi,
-      title: "High-Speed Internet",
-      description: "Campus-wide WiFi with dedicated bandwidth for seamless online learning",
-      image:
-        "https://images.unsplash.com/photo-1581092160562-40aa08e78837?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
-    },
-    {
-      icon: Coffee,
-      title: "Food Court & Cafeteria",
-      description: "Multiple dining options with healthy and affordable meal plans",
-      image:
-        "https://images.unsplash.com/photo-1567521464027-f127ff144326?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
-    },
-    {
-      icon: Car,
-      title: "Transportation",
-      description: "Bus facility connecting major areas of Bangalore for easy commute",
-      image:
-        "https://images.unsplash.com/photo-1570125909232-eb263c188f7e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
-    },
-  ]
+const facilities = [
+  {
+    icon: BookOpen,
+    title: "Modern Library",
+    description: "24/7 access to digital and physical resources with over 50,000 books and journals",
+    image: "/library.jpg", // Place this in public/images/library.jpg
+  },
+  {
+    icon: Wifi,
+    title: "High-Speed Internet",
+    description: "Campus-wide WiFi with dedicated bandwidth for seamless online learning",
+    image: "/wifi.jpg", // Place this in public/images/internet.jpg
+  },
+  {
+    icon: Coffee,
+    title: "Food Court & Cafeteria",
+    description: "Multiple dining options with healthy and affordable meal plans",
+    image: "/canteen.jpg", // Place this in public/images/cafeteria.jpg
+  },
+  {
+    icon: Car,
+    title: "Transportation",
+    description: "Bus facility connecting major areas of Bangalore for easy commute",
+    image: "/Transport.jpg", // Place this in public/images/transport.jpg
+  },
+];
+
 
   const sportsActivities = [
     {
@@ -851,31 +853,35 @@ export default function CampusLife() {
       title: "Tech Fest 2024",
       date: "March 15-17, 2024",
       description: "Annual technology festival featuring hackathons, coding competitions, and tech talks",
-      image:
-        "https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+      // image:
+        // "https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+      image:"/techfest.webp",   
       participants: "500+ Students",
     },
     {
       title: "Cultural Festival",
       date: "February 10-12, 2024",
       description: "Celebration of arts, music, dance, and cultural diversity with performances and competitions",
-      image:
-        "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+      // image:
+      //   "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+      image:"/culturals.jpg",   
       participants: "800+ Students",
     },
     {
       title: "Sports Week",
       date: "January 20-26, 2024",
       description: "Inter-department sports competitions including cricket, basketball, and athletics",
-      image: "https://images.unsplash.com/photo-1544717297-fa95b6ee9643?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+      // image: "https://images.unsplash.com/photo-1544717297-fa95b6ee9643?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+      image:"/sport.jpg",   
       participants: "300+ Athletes",
     },
     {
       title: "Industry Connect",
       date: "April 5-6, 2024",
       description: "Industry experts sharing insights, workshops, and networking opportunities",
-      image:
-        "https://images.unsplash.com/photo-1515187029135-18ee286d815b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+      // image:
+        // "https://images.unsplash.com/photo-1515187029135-18ee286d815b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+        image:"/industrial (1).jpg",   
       participants: "200+ Professionals",
     },
   ]

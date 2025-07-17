@@ -427,7 +427,7 @@ export default function Footer() {
                 © {new Date().getFullYear()} BIMSR – India's First AI-Powered Education Institute. All rights reserved.
               </p>
               <p className="text-blue-100 text-sm">
-                Rights reserved by <span className="font-semibold text-white">Merketly</span>.
+                Rights reserved by <span className="font-semibold text-white">Marketly</span>.
               </p>
             </div>
             <div className="flex flex-wrap items-center gap-6 text-sm">

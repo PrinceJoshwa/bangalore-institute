@@ -950,6 +950,7 @@ import {
   DollarSign,
   GraduationCap,
   Award,
+  IndianRupee,
 } from "lucide-react"
 
 export default function FeeCalculator() {
@@ -1135,7 +1136,7 @@ export default function FeeCalculator() {
                   <button
                     className={`p-4 rounded-xl border-2 transition-all duration-300 border-blue-500 bg-blue-50 text-blue-700`}
                   >
-                    <DollarSign className="h-6 w-6 mx-auto mb-2" />
+                    <IndianRupee className="h-6 w-6 mx-auto mb-2" />
                     <div className="font-semibold">Full Payment</div>
                     <div className="text-sm text-gray-600">One-time payment</div>
                   </button>

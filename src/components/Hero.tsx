@@ -1,7 +1,8 @@
 // "use client"
 
 // import { useState, useEffect } from "react"
-// import { ArrowRight, Play, Star, CheckCircle, Sparkles, Laptop, Trophy, GraduationCap, Shield } from "lucide-react"
+// import { ArrowRight, Phone, Star, CheckCircle, Sparkles, Laptop, Trophy, GraduationCap, Shield } from "lucide-react"
+// import { Link } from "react-router-dom"
 
 // export default function Hero() {
 //   const [currentSlide, setCurrentSlide] = useState(0)
@@ -74,6 +75,10 @@
 //     { icon: <Star className="h-6 w-6" />, title: "0% Interest EMI", desc: "Flexible payment options available" },
 //   ]
 
+//   const handleCallNow = () => {
+//     window.location.href = "tel:8970002004"
+//   }
+
 //   return (
 //     <section className="relative min-h-screen overflow-hidden bg-gradient-to-br from-slate-50 via-blue-50 to-purple-50">
 //       {/* Animated Background Elements */}
@@ -124,6 +129,19 @@
 //               </div>
 //             </div>
 
+//             {/* Football Excellence Section */}
+//             <div className="bg-gradient-to-r from-orange-50 to-red-50 border border-orange-200 rounded-xl p-4">
+//               <div className="flex items-center space-x-4">
+//                 <Trophy className="h-8 w-8 text-orange-600" />
+//                 <div>
+//                   <div className="font-bold text-orange-800">Football Excellence Program</div>
+//                   <div className="text-sm text-orange-600">
+//                     AIFFF Qualified Coaches • Championship Sponsorship • Professional Training
+//                   </div>
+//                 </div>
+//               </div>
+//             </div>
+
 //             {/* Key Highlights */}
 //             <div className="grid grid-cols-2 gap-4">
 //               {highlights.map((highlight, index) => (
@@ -143,13 +161,19 @@
 
 //             {/* CTA Buttons */}
 //             <div className="flex flex-col sm:flex-row gap-4">
-//               <button className="bg-gradient-to-r from-red-600 to-orange-600 hover:from-red-700 hover:to-orange-700 text-white px-8 py-4 rounded-xl font-semibold text-lg shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 flex items-center justify-center">
-//                 <span className="mr-2">Secure Your Admission</span>
+//               <Link
+//                 to="/admission"
+//                 className="bg-gradient-to-r from-red-600 to-orange-600 hover:from-red-700 hover:to-orange-700 text-white px-8 py-4 rounded-xl font-semibold text-lg shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 flex items-center justify-center"
+//               >
+//                 <span className="mr-2">Secure Admission</span>
 //                 <ArrowRight className="h-5 w-5" />
-//               </button>
-//               <button className="border-2 border-gray-300 hover:bg-gray-50 text-gray-700 px-8 py-4 rounded-xl font-semibold text-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 flex items-center justify-center">
-//                 <Play className="h-5 w-5 mr-2" />
-//                 Call 8970002004
+//               </Link>
+//               <button
+//                 onClick={handleCallNow}
+//                 className="border-2 border-gray-300 hover:bg-gray-50 text-gray-700 px-8 py-4 rounded-xl font-semibold text-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 flex items-center justify-center"
+//               >
+//                 <Phone className="h-5 w-5 mr-2" />
+//                 Call Now
 //               </button>
 //             </div>
 
@@ -261,9 +285,12 @@
 //                 <span className="ml-2">Thousands of students face the same fear every year. Don't be one of them!</span>
 //               </div>
 //             </div>
-//             <button className="bg-white text-red-600 hover:bg-gray-100 font-semibold px-6 py-2 rounded-lg transition-all duration-200">
-//               Inquire Now
-//             </button>
+//             <Link
+//               to="/contact"
+//               className="bg-white text-red-600 hover:bg-gray-100 font-semibold px-6 py-2 rounded-lg transition-all duration-200"
+//             >
+//               Enquire Now
+//             </Link>
 //           </div>
 //         </div>
 //       </div>
@@ -301,12 +328,18 @@
 //                 Drop 'Admission' in the comments or call us now - our team is waiting to help you take the first step.
 //               </p>
 //               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-//                 <button className="bg-gradient-to-r from-green-600 to-blue-600 hover:from-green-700 hover:to-blue-700 text-white px-8 py-4 rounded-xl font-semibold text-lg shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
+//                 <button
+//                   onClick={handleCallNow}
+//                   className="bg-gradient-to-r from-green-600 to-blue-600 hover:from-green-700 hover:to-blue-700 text-white px-8 py-4 rounded-xl font-semibold text-lg shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
+//                 >
 //                   📞 Call 8970002004
 //                 </button>
-//                 <button className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-8 py-4 rounded-xl font-semibold text-lg shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
-//                   📧 admissions@bangaloreinstitutions.com
-//                 </button>
+//                 <a
+//                   href="mailto:admissions@bangaloreinstitutions.com"
+//                   className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-8 py-4 rounded-xl font-semibold text-lg shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
+//                 >
+//                   📧 Email Us
+//                 </a>
 //               </div>
 //               <p className="text-sm text-gray-600 mt-4 font-semibold">
 //                 🎓 BIMSR – Backing Your Future. International-level education at an Indian price.
@@ -339,17 +372,17 @@ export default function Hero() {
 
   const slides = [
     {
-      title: "Stuck wondering what to do after 12th?",
-      subtitle: "BIMSR - Where Dreams Meet Direction & Careers Begin with Clarity",
+      title: "BIMSR College",
+      subtitle: "Bachelors Degree with Post-graduation and Professional Development Certification Programs.",
       description:
-        "Don't let high college fees in Bangalore without placement assurance become your nightmare. Join BIMSR - AICTE recognized & affiliated to Bangalore North University with 100% placement guarantee.",
+        "Welcome to BIMSR College, where we blend academic excellence with industry-relevant skills. Our unique integrated programs combine bachelor's degrees with professional certifications to make you job-ready.",
       image:
         "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2071&q=80",
       stats: { recognition: "AICTE", affiliation: "BNU", placement: "100%" },
     },
     {
       title: "International-Level Education at Indian Price",
-      subtitle: "Future-Ready Bachelor's Degrees + Fully Funded Postgraduate",
+      subtitle: "Integrated Bachelor's + Professional Certification Programs",
       description:
         "Get world-class education with guaranteed placements, free laptop kit, sports kit for athletes, and 0% interest EMI options. Plus, 1-Year Postgraduate Course - 100% Funded by BIMSR!",
       image:
