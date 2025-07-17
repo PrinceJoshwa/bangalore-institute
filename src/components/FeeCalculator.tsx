@@ -947,7 +947,6 @@ import {
   ArrowRight,
   Percent,
   Calendar,
-  DollarSign,
   GraduationCap,
   Award,
   IndianRupee,
