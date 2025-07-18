@@ -76,7 +76,7 @@
 //   ]
 
 //   const handleCallNow = () => {
-//     window.location.href = "tel:8970002004"
+//     window.location.href = "tel:7676401932"
 //   }
 
 //   return (
@@ -332,7 +332,7 @@
 //                   onClick={handleCallNow}
 //                   className="bg-gradient-to-r from-green-600 to-blue-600 hover:from-green-700 hover:to-blue-700 text-white px-8 py-4 rounded-xl font-semibold text-lg shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
 //                 >
-//                   📞 Call 8970002004
+//                   📞 Call 7676401932
 //                 </button>
 //                 <a
 //                   href="mailto:admissions@bangaloreinstitutions.com"
@@ -430,7 +430,7 @@ export default function Hero() {
   ]
 
   const handleCallNow = () => {
-    window.location.href = "tel:8970002004"
+    window.location.href = "tel:7676401932"
   }
 
   return (
@@ -686,7 +686,7 @@ export default function Hero() {
                   onClick={handleCallNow}
                   className="bg-gradient-to-r from-green-600 to-blue-600 hover:from-green-700 hover:to-blue-700 text-white px-8 py-4 rounded-xl font-semibold text-lg shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
                 >
-                  📞 Call 8970002004
+                  📞 Call 7676401932
                 </button>
                 <a
                   href="mailto:admissions@bangaloreinstitutions.com"

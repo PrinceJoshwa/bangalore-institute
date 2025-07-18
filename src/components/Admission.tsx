@@ -358,7 +358,7 @@
 // // //                   </div>
 // // //                   <div>
 // // //                     <div className="font-semibold text-gray-900">Admission Helpline</div>
-// // //                     <div className="text-blue-600 font-medium">8970002004</div>
+// // //                     <div className="text-blue-600 font-medium">7676401932</div>
 // // //                   </div>
 // // //                 </div>
 // // //                 <div className="text-center">
@@ -585,10 +585,10 @@
 // //               Apply Now - Get 10% Discount
 // //             </button>
 // //             <a
-// //               href="tel:8970002004"
+// //               href="tel:7676401932"
 // //               className="bg-white/20 backdrop-blur-sm text-white px-8 py-3 rounded-xl font-semibold hover:bg-white/30 transition-all duration-300 border border-white/30"
 // //             >
-// //               Call Now: 8970002004
+// //               Call Now: 7676401932
 // //             </a>
 // //           </div>
 // //         </div>
@@ -872,11 +872,11 @@
 // //                   Fee Calculator
 // //                 </button>
 // //                 <a
-// //                   href="tel:8970002004"
+// //                   href="tel:7676401932"
 // //                   className="w-full bg-white text-blue-600 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-all duration-300 flex items-center justify-center"
 // //                 >
 // //                   <Phone className="h-4 w-4 mr-2" />
-// //                   Call: 8970002004
+// //                   Call: 7676401932
 // //                 </a>
 // //               </div>
 // //             </div>
@@ -897,7 +897,7 @@
 // //               <div className="text-center">
 // //                 <Phone className="h-8 w-8 mx-auto mb-3" />
 // //                 <h4 className="font-bold mb-2">Call Us</h4>
-// //                 <p className="text-green-100">8970002004</p>
+// //                 <p className="text-green-100">7676401932</p>
 // //               </div>
 // //               <div className="text-center">
 // //                 <Mail className="h-8 w-8 mx-auto mb-3" />
@@ -1591,7 +1591,7 @@
 //                   <Phone className="h-5 w-5 text-blue-600" />
 //                   <div>
 //                     <p className="font-medium text-gray-900">Call Us</p>
-//                     <p className="text-gray-600">+91 8970002004</p>
+//                     <p className="text-gray-600">+91 7676401932</p>
 //                   </div>
 //                 </div>
 //                 <div className="flex items-center gap-3">
@@ -1737,16 +1737,16 @@ export default function Admission() {
       seats: "60",
       href: "programs/bca-data-analytics",
     },
-    {
-      id: "bca-digital-marketing",
-      name: "BCA + Digital Marketing + PGCCA",
-      duration: "4 Years",
-      fee: "₹3.95L Total",
-      highlights: ["SEO/SEM", "Social Media Marketing", "Content Strategy"],
-      eligibility: "12th Pass (Any Stream)",
-      seats: "60",
-      href: "programs/bca-digital-marketing",
-    },
+    // {
+    //   id: "bca-digital-marketing",
+    //   name: "BCA + Digital Marketing + PGCCA",
+    //   duration: "4 Years",
+    //   fee: "₹3.95L Total",
+    //   highlights: ["SEO/SEM", "Social Media Marketing", "Content Strategy"],
+    //   eligibility: "12th Pass (Any Stream)",
+    //   seats: "60",
+    //   href: "programs/bca-digital-marketing",
+    // },
     {
       id: "bba-digital-marketing",
       name: "BBA + Digital Marketing + PGCBA",
@@ -2342,7 +2342,7 @@ export default function Admission() {
                   <Phone className="h-5 w-5 text-blue-600" />
                   <div>
                     <p className="font-medium text-gray-900">Call Us</p>
-                    <p className="text-gray-600">+91 8970002004</p>
+                    <p className="text-gray-600">+91 7676401932</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">

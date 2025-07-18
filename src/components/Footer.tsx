@@ -149,14 +149,6 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  to="/programs/bca-digital-marketing"
-                  className="text-blue-100 hover:text-white transition-colors text-sm"
-                >
-                  BCA + Digital Marketing + PGCCA
-                </Link>
-              </li>
-              <li>
-                <Link
                   to="/programs/bba-digital-marketing"
                   className="text-blue-100 hover:text-white transition-colors text-sm"
                 >
@@ -181,14 +173,16 @@ export default function Footer() {
                   <p className="font-medium text-white">BIMSR Campus</p>
                   <p>Bangalore Institute of Management</p>
                   <p>Science & Research</p>
-                  <p>Anekal, Bangalore, Karnataka</p>
+                  <p>Chikkakannalli, Bengaluru,</p>
+                  <p>Karnataka-560035</p>
+                  
                 </div>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="h-5 w-5 shrink-0 text-blue-300" />
                 <div>
-                  <a href="tel:8970002004" className="text-white font-medium hover:text-blue-300 transition-colors">
-                    8970002004
+                  <a href="tel:7676401932" className="text-white font-medium hover:text-blue-300 transition-colors">
+                    +91 76764 01932
                   </a>
                   <p className="text-blue-100 text-sm">Admission Helpline</p>
                 </div>

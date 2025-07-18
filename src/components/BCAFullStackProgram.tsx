@@ -655,7 +655,7 @@
 //                     <Users className="h-8 w-8 text-blue-400" />
 //                   </div>
 //                   <div className="font-semibold mb-1">Call Our Admissions Office</div>
-//                   <div className="text-sm text-gray-400">8970002004</div>
+//                   <div className="text-sm text-gray-400">7676401932</div>
 //                 </div>
 //                 <div className="text-center">
 //                   <div className="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
