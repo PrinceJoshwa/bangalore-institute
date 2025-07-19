@@ -623,38 +623,38 @@ export default function Contact() {
     },
   ]
 
-  const socialLinks = [
-    {
-      name: "Facebook",
-      icon: <Facebook className="h-5 w-5" />,
-      url: "https://facebook.com/bimsr",
-      color: "hover:text-blue-600",
-    },
-    {
-      name: "Twitter",
-      icon: <Twitter className="h-5 w-5" />,
-      url: "https://twitter.com/bimsr",
-      color: "hover:text-blue-400",
-    },
-    {
-      name: "Instagram",
-      icon: <Instagram className="h-5 w-5" />,
-      url: "https://instagram.com/bimsr",
-      color: "hover:text-pink-600",
-    },
-    {
-      name: "LinkedIn",
-      icon: <Linkedin className="h-5 w-5" />,
-      url: "https://linkedin.com/company/bimsr",
-      color: "hover:text-blue-700",
-    },
-    {
-      name: "YouTube",
-      icon: <Youtube className="h-5 w-5" />,
-      url: "https://youtube.com/@bimsr",
-      color: "hover:text-red-600",
-    },
-  ]
+  // const socialLinks = [
+  //   {
+  //     name: "Facebook",
+  //     icon: <Facebook className="h-5 w-5" />,
+  //     url: "https://facebook.com/bimsr",
+  //     color: "hover:text-blue-600",
+  //   },
+  //   {
+  //     name: "Twitter",
+  //     icon: <Twitter className="h-5 w-5" />,
+  //     url: "https://twitter.com/bimsr",
+  //     color: "hover:text-blue-400",
+  //   },
+  //   {
+  //     name: "Instagram",
+  //     icon: <Instagram className="h-5 w-5" />,
+  //     url: "https://instagram.com/bimsr",
+  //     color: "hover:text-pink-600",
+  //   },
+  //   {
+  //     name: "LinkedIn",
+  //     icon: <Linkedin className="h-5 w-5" />,
+  //     url: "https://linkedin.com/company/bimsr",
+  //     color: "hover:text-blue-700",
+  //   },
+  //   {
+  //     name: "YouTube",
+  //     icon: <Youtube className="h-5 w-5" />,
+  //     url: "https://youtube.com/@bimsr",
+  //     color: "hover:text-red-600",
+  //   },
+  // ]
 
   const programs = [
     "BCA + Full Stack + PGCCA",
