@@ -67,8 +67,9 @@ export default function ProgramsOverview() {
         "ML Engineer (₹10-18L)",
       ],
       placementPartners: ["Microsoft", "Amazon", "Google", "IBM", "Deloitte"],
-      image:
-        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
+      // image:
+      //   "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
+      image:"data.jpg",
       color: "from-purple-600 to-pink-600",
     },
     // {
@@ -117,8 +118,9 @@ export default function ProgramsOverview() {
         "Entrepreneur/Startup Founder",
       ],
       placementPartners: ["HDFC Bank", "ICICI", "Reliance", "Tata", "L&T"],
-      image:
-        "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      // image:
+      //   "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      image:"/digital.jpg",
       color: "from-red-600 to-rose-600",
     },
     {
