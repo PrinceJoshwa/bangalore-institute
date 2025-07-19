@@ -944,7 +944,7 @@ export default function Contact() {
             ))}
 
             {/* Social Media */}
-            <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100">
+            {/* <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100">
               <h4 className="text-lg font-bold text-gray-900 mb-4">Follow Us</h4>
               <div className="flex space-x-4">
                 {socialLinks.map((social, index) => (
@@ -959,7 +959,7 @@ export default function Contact() {
                   </a>
                 ))}
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
 

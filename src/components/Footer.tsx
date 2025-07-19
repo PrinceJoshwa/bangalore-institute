@@ -41,7 +41,7 @@ export default function Footer() {
             </p>
             <div className="flex gap-4">
               <a
-                href="https://facebook.com/bimsr"
+                // href="https://facebook.com/bimsr"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-white/20 transition-colors"
@@ -49,7 +49,7 @@ export default function Footer() {
                 <Facebook className="h-5 w-5" />
               </a>
               <a
-                href="https://twitter.com/bimsr"
+                // href="https://twitter.com/bimsr"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-white/20 transition-colors"
@@ -57,7 +57,7 @@ export default function Footer() {
                 <Twitter className="h-5 w-5" />
               </a>
               <a
-                href="https://instagram.com/bimsr"
+                // href="https://instagram.com/bimsr"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-white/20 transition-colors"
@@ -65,7 +65,7 @@ export default function Footer() {
                 <Instagram className="h-5 w-5" />
               </a>
               <a
-                href="https://linkedin.com/company/bimsr"
+                // href="https://linkedin.com/company/bimsr"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-white/20 transition-colors"
