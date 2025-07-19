@@ -524,11 +524,6 @@ import {
   Calendar,
   User,
   Building,
-  Facebook,
-  Twitter,
-  Instagram,
-  Linkedin,
-  Youtube,
 } from "lucide-react"
 import supabase from "../lib/supabase"
 
