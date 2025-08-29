@@ -1693,7 +1693,7 @@ import {
   TrendingUp,
   Shield,
 } from "lucide-react"
-import  supabase  from "../lib/supabase"
+import supabase from "../lib/supabase"
 
 export default function Admission() {
   const [formData, setFormData] = useState({
