@@ -129,10 +129,10 @@
 
 // api/keep-alive.cts  <- Make sure the file name ends in .cts
 
-const { createClient } = require('@supabase/supabase-js');
+import { createClient } from '@supabase/supabase-js';
 
 // This function will be exported
-async function handler(request, response) {
+async function handler(request: any, response: { status: (arg0: number) => { (): any; new(): any; json: { (arg0: { error?: any; message?: string; }): any; new(): any; }; }; }) {
   const supabaseUrl = process.env.VITE_SUPABASE_URL;
   const supabaseKey = process.env.VITE_SUPABASE_ANON_KEY;
 
