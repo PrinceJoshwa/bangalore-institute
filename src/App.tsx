@@ -22,6 +22,8 @@ import Scholarships from "./components/Scholarships"
 import Testimonials from "./components/Testimonials"
 import Contact from "./components/Contact"
 import WhatsAppChat from "./components/Whatsapp"
+import StudentGallery from "./components/StudentGallery"
+import CertificationsPage from "./components/CertificationsPage"
 
 
 function App() {
@@ -47,6 +49,8 @@ function App() {
             <Route path="/scholarships" element={<Scholarships />} />
             <Route path="/testimonials" element={<Testimonials />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/student-gallery" element={<StudentGallery />} />
+            <Route path="/certifications" element={<CertificationsPage />} />
           </Routes>
         </main>
         <WhatsAppChat />
