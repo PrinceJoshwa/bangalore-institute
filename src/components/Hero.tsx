@@ -357,6 +357,10 @@
 import { useState, useEffect } from "react"
 import { ArrowRight, Phone, Star, CheckCircle, Sparkles, Laptop, Trophy, GraduationCap, Shield } from "lucide-react"
 import { Link } from "react-router-dom"
+import CollaborationBanner from "./CollaborationBanner"
+import PresentMilestone from "./PresentMilestone"
+import StudentGallery from "./StudentGallery"
+import CertificationsPreview from "./CertificationsPreview"
 
 export default function Hero() {
   const [currentSlide, setCurrentSlide] = useState(0)
@@ -434,6 +438,7 @@ export default function Hero() {
   }
 
   return (
+    <>
     <section className="relative min-h-screen overflow-hidden bg-gradient-to-br from-slate-50 via-blue-50 to-purple-50">
       {/* Animated Background Elements */}
       <div className="absolute inset-0">
@@ -703,5 +708,18 @@ export default function Hero() {
         </div>
       </div>
     </section>
+      
+      {/* Collaboration Banner */}
+      <CollaborationBanner />
+      
+      {/* Present Milestone Section */}
+      <PresentMilestone />
+      
+      {/* Student Gallery Section */}
+      <StudentGallery />
+      
+      {/* Certifications & Courses Section */}
+      <CertificationsPreview />
+    </>
   )
 }
