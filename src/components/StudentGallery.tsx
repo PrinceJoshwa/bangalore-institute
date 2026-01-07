@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState } from "react"
 import { 
   Trophy, 
   GraduationCap, 
@@ -22,7 +22,6 @@ import { Link } from "react-router-dom"
 export default function StudentGallery() {
   const [activeSection, setActiveSection] = useState<'football' | 'campus' | 'scholarships' | 'hiring'>('football')
   const [currentVideo, setCurrentVideo] = useState(0)
-  const [currentPartner, setCurrentPartner] = useState(0)
 
   // Red Bull Official Partner Football Event Videos
   const footballVideos = [
@@ -128,14 +127,6 @@ export default function StudentGallery() {
     totalPartners: "50+",
     placementRate: "100%"
   }
-
-  // Auto-rotate partners
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentPartner((prev) => (prev + 1) % Math.ceil(hiringPartners.length / 4))
-    }, 3000)
-    return () => clearInterval(timer)
-  }, [])
 
   const nextVideo = () => {
     setCurrentVideo((prev) => (prev + 1) % footballVideos.length)
