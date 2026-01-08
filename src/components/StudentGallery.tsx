@@ -105,20 +105,19 @@ export default function StudentGallery() {
     ]
   }
 
-  // Hiring Partners Data
+  // Hiring Partners Data - Using same logos as Top Recruiters
   const hiringPartners = [
-    { name: "TCS", logo: "🏢", sector: "IT Services", package: "₹3.5-6 LPA" },
-    { name: "Infosys", logo: "💻", sector: "Technology", package: "₹4-7 LPA" },
-    { name: "Wipro", logo: "🌐", sector: "IT Services", package: "₹3.5-6 LPA" },
-    { name: "Accenture", logo: "⚡", sector: "Consulting", package: "₹5-8.5 LPA" },
-    { name: "Cognizant", logo: "🔧", sector: "Technology", package: "₹4-7 LPA" },
-    { name: "IBM", logo: "🏛️", sector: "Technology", package: "₹5-8.5 LPA" },
-    { name: "HCL", logo: "🚀", sector: "IT Services", package: "₹4-7 LPA" },
-    { name: "Tech Mahindra", logo: "📱", sector: "IT Services", package: "₹4-6.5 LPA" },
-    { name: "Capgemini", logo: "🎯", sector: "Consulting", package: "₹4.5-8 LPA" },
-    { name: "Deloitte", logo: "📊", sector: "Consulting", package: "₹6-8.5 LPA" },
-    { name: "KPMG", logo: "💼", sector: "Consulting", package: "₹5.5-8 LPA" },
-    { name: "EY", logo: "📈", sector: "Consulting", package: "₹5-8 LPA" },
+    { name: "TCS", logo: "/TCS.png", sector: "IT Services", package: "₹3.5-6 LPA" },
+    { name: "Infosys", logo: "/infosys.png", sector: "Technology", package: "₹4-7 LPA" },
+    { name: "Cognizant", logo: "/CTS.png", sector: "Technology", package: "₹4-7 LPA" },
+    { name: "Accenture", logo: "/Accenture.png", sector: "Consulting", package: "₹5-8.5 LPA" },
+    { name: "Tech Mahindra", logo: "/Tech Mahindra Logo_3.webp", sector: "IT Services", package: "₹4-6.5 LPA" },
+    { name: "HCLTech", logo: "/HCLTECH.png", sector: "IT Services", package: "₹4-7 LPA" },
+    { name: "Capgemini", logo: "/Capgemini.webp", sector: "Consulting", package: "₹4.5-8 LPA" },
+    { name: "IBM", logo: "/IBM_logo.svg.png", sector: "Technology", package: "₹5-8.5 LPA" },
+    { name: "Zell Education", logo: "/Zell.png", sector: "Education", package: "₹4-6 LPA" },
+    { name: "Enormayu", logo: "/enormayu.png", sector: "Technology", package: "₹3.5-6 LPA" },
+    { name: "Deleite", logo: "/deleitepng.png", sector: "Technology", package: "₹4-7 LPA" },
   ]
 
   const hiringStat = {
@@ -532,10 +531,13 @@ export default function StudentGallery() {
                     className="group bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 hover:border-blue-400/50 transition-all duration-300 hover:transform hover:-translate-y-2 hover:shadow-xl hover:shadow-blue-500/20"
                   >
                     <div className="text-center">
-                      <div className="text-4xl mb-4 group-hover:scale-125 transition-transform duration-300">
-                        {partner.logo}
+                      <div className="flex items-center justify-center h-16 mb-4 bg-white rounded-xl p-3">
+                        <img 
+                          src={partner.logo} 
+                          alt={partner.name}
+                          className="max-h-10 max-w-[100px] object-contain group-hover:scale-110 transition-transform duration-300"
+                        />
                       </div>
-                      <h4 className="text-lg font-bold text-white mb-1">{partner.name}</h4>
                       <p className="text-sm text-gray-400 mb-3">{partner.sector}</p>
                       <div className="bg-gradient-to-r from-green-500/20 to-emerald-500/20 rounded-lg py-2 px-3">
                         <span className="text-green-400 font-semibold">{partner.package}</span>
