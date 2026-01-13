@@ -15,7 +15,7 @@ export default function PresentMilestone() {
       icon: <GraduationCap className="h-6 w-6" />,
     },
     {
-      value: "805+",
+      value: "80%",
       label: "Job Offers",
       icon: <Briefcase className="h-6 w-6" />,
     },
