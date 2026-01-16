@@ -168,7 +168,7 @@ export default function CertificationsPreview() {
                   <img
                     src={courses[currentCourse].image}
                     alt={courses[currentCourse].title}
-                    className="w-full h-[400px] object-cover group-hover:scale-105 transition-transform duration-500"
+                    className="w-full h-[400px] object-fill group-hover:scale-105 transition-transform duration-500"
                   />
                   {/* FREE Badge */}
                   <div className="absolute top-4 right-4 bg-gradient-to-r from-green-500 to-emerald-500 text-white px-4 py-2 rounded-full font-bold shadow-lg animate-pulse">
@@ -275,12 +275,13 @@ export default function CertificationsPreview() {
                     <ArrowRight className="h-5 w-5" />
                   </a>
                   <Link
-                    to="/certifications"
+                    to="/programs"
                     className="border-2 border-gray-200 hover:border-blue-300 hover:bg-blue-50 text-gray-700 px-8 py-4 rounded-xl font-semibold text-center transition-all duration-300"
                   >
                     View All Courses
                   </Link>
                 </div>
+
 
                 {/* Indicators */}
                 <div className="flex justify-center space-x-2 pt-4">
@@ -297,7 +298,68 @@ export default function CertificationsPreview() {
                   ))}
                 </div>
               </div>
+              
             </div>
+                    <div className="mt-12 sm:mt-20">
+          <div className="text-center mb-8 sm:mb-12">
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3 sm:mb-4">Our Training Partners</h2>
+            <p className="text-gray-600 text-sm sm:text-base">We collaborate with leading organizations to provide world-class training</p>
+          </div>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 sm:gap-6">
+            {[
+              { 
+                name: 'Google', 
+                logo: 'https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png'
+              },
+              { 
+                name: 'Microsoft', 
+                logo: 'https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31'
+              },
+              { 
+                name: 'Coursera', 
+                logo: '/coursera.webp'
+              },
+              { 
+                name: 'ExcelR', 
+                logo: '/ExcelR.jpg'
+              },
+              { 
+                name: 'EY', 
+                logo: '/EY.png'
+              },
+              { 
+                name: 'NASSCOM', 
+                logo: '/NASSCOM.svg'
+              },
+              { 
+                name: 'SkillDunia', 
+                logo: '/SkillDunia.png'
+              },
+              { 
+                name: 'IIT Hyderabad', 
+                logo: 'https://www.iith.ac.in/assets/images/logo.png'
+              },
+            ].map((partner, index) => (
+              <div
+                key={index}
+                className="bg-white rounded-xl p-3 sm:p-6 shadow-md border border-gray-100 hover:shadow-xl transition-all duration-300 hover:transform hover:-translate-y-2 flex flex-col items-center justify-center min-h-[80px] sm:min-h-[120px]"
+              >
+                <img 
+                  src={partner.logo} 
+                  alt={partner.name}
+                  className="h-8 sm:h-12 max-w-[100px] sm:max-w-[140px] object-contain mb-1 sm:mb-3"
+                  onError={(e) => {
+                    // Fallback to text if image fails to load
+                    const target = e.target as HTMLImageElement;
+                    target.style.display = 'none';
+                    target.nextElementSibling?.classList.remove('hidden');
+                  }}
+                />
+                {/* <div className="font-medium text-gray-700 text-xs sm:text-sm text-center">{partner.name}</div> */}
+              </div>
+            ))}
+          </div>
+        </div>
           </div>
         )}
 
@@ -327,7 +389,7 @@ export default function CertificationsPreview() {
             </div>
 
             {/* View All Button */}
-            <div className="text-center">
+            {/* <div className="text-center">
               <Link
                 to="/certifications"
                 className="inline-flex items-center space-x-2 bg-gradient-to-r from-green-600 to-teal-600 hover:from-green-700 hover:to-teal-700 text-white px-8 py-4 rounded-xl font-semibold shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
@@ -335,7 +397,69 @@ export default function CertificationsPreview() {
                 <span>View All Certifications</span>
                 <ArrowRight className="h-5 w-5" />
               </Link>
-            </div>
+            </div> */}
+
+                    {/* Partners Section */}
+        <div className="mt-12 sm:mt-20">
+          <div className="text-center mb-8 sm:mb-12">
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3 sm:mb-4">Our Training Partners</h2>
+            <p className="text-gray-600 text-sm sm:text-base">We collaborate with leading organizations to provide world-class training</p>
+          </div>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 sm:gap-6">
+            {[
+              { 
+                name: 'Google', 
+                logo: 'https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png'
+              },
+              { 
+                name: 'Microsoft', 
+                logo: 'https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31'
+              },
+              { 
+                name: 'Coursera', 
+                logo: '/coursera.webp'
+              },
+              { 
+                name: 'ExcelR', 
+                logo: '/ExcelR.jpg'
+              },
+              { 
+                name: 'EY', 
+                logo: '/EY.png'
+              },
+              { 
+                name: 'NASSCOM', 
+                logo: '/NASSCOM.svg'
+              },
+              { 
+                name: 'SkillDunia', 
+                logo: '/SkillDunia.png'
+              },
+              { 
+                name: 'IIT Hyderabad', 
+                logo: 'https://www.iith.ac.in/assets/images/logo.png'
+              },
+            ].map((partner, index) => (
+              <div
+                key={index}
+                className="bg-white rounded-xl p-3 sm:p-6 shadow-md border border-gray-100 hover:shadow-xl transition-all duration-300 hover:transform hover:-translate-y-2 flex flex-col items-center justify-center min-h-[80px] sm:min-h-[120px]"
+              >
+                <img 
+                  src={partner.logo} 
+                  alt={partner.name}
+                  className="h-8 sm:h-12 max-w-[100px] sm:max-w-[140px] object-contain mb-1 sm:mb-3"
+                  onError={(e) => {
+                    // Fallback to text if image fails to load
+                    const target = e.target as HTMLImageElement;
+                    target.style.display = 'none';
+                    target.nextElementSibling?.classList.remove('hidden');
+                  }}
+                />
+                {/* <div className="font-medium text-gray-700 text-xs sm:text-sm text-center">{partner.name}</div> */}
+              </div>
+            ))}
+          </div>
+        </div>
           </div>
         )}
 

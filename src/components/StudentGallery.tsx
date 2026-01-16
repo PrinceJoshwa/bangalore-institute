@@ -21,29 +21,59 @@ import { Link } from "react-router-dom"
 
 export default function StudentGallery() {
   const [activeSection, setActiveSection] = useState<'football' | 'campus' | 'scholarships' | 'hiring'>('football')
-  const [currentVideo, setCurrentVideo] = useState(0)
+  // const [currentVideo, setCurrentVideo] = useState(0)
 
   // Red Bull Official Partner Football Event Videos
-  const footballVideos = [
+  // const footballVideos = [
+  //   {
+  //     id: 1,
+  //     title: "Red Bull Campus Football Championship 2024",
+  //     description: "BIMSR students competing in the prestigious Red Bull Campus Football Championship. Our team showcased exceptional skills and sportsmanship.",
+  //     videoUrl: "/IMG_4750.MOV",
+  //     duration: "Event Video 1",
+  //     date: "December 2024",
+  //     highlights: ["Quarter Finals", "Best Player Award", "Team Spirit Trophy"]
+  //   },
+  //   {
+  //     id: 2,
+  //     title: "BIMSR vs Top Colleges - Red Bull Cup Finals",
+  //     description: "Witness the thrilling final match sponsored by Red Bull where our athletes displayed world-class performance and determination.",
+  //     videoUrl: "/IMG_4755.MOV",
+  //     duration: "Event Video 2",
+  //     date: "November 2024",
+  //     highlights: ["Champions Trophy", "Golden Boot", "Fair Play Award"]
+  //   }
+  // ]
+
+    const [currentIndex, setCurrentIndex] = useState(0);
+
+  // 2. Define the Data Array
+  const volleyballImages = [
     {
       id: 1,
-      title: "Red Bull Campus Football Championship 2024",
-      description: "BIMSR students competing in the prestigious Red Bull Campus Football Championship. Our team showcased exceptional skills and sportsmanship.",
-      videoUrl: "/IMG_4750.MOV",
-      duration: "Event Video 1",
-      date: "December 2024",
-      highlights: ["Quarter Finals", "Best Player Award", "Team Spirit Trophy"]
+      imageUrl: "https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?q=80&w=1000&auto=format&fit=crop", // Placeholder image
+      title: "Championship Finals 2025",
+      description: "The winning moment where the team secured the state trophy after a grueling 5-set match.",
+      highlights: ["MVP Award", "Winning Spike", "State Record"]
     },
     {
       id: 2,
-      title: "BIMSR vs Top Colleges - Red Bull Cup Finals",
-      description: "Witness the thrilling final match sponsored by Red Bull where our athletes displayed world-class performance and determination.",
-      videoUrl: "/IMG_4755.MOV",
-      duration: "Event Video 2",
-      date: "November 2024",
-      highlights: ["Champions Trophy", "Golden Boot", "Fair Play Award"]
-    }
-  ]
+      imageUrl: "https://images.unsplash.com/photo-1592656094267-764a45160876?q=80&w=1000&auto=format&fit=crop",
+      title: "Inter-College Tournament",
+      description: "Dominating performance against the rival college, showcasing exceptional teamwork and defense.",
+      highlights: ["Best Defense", "Team Spirit", "Clean Sweep"]
+    },
+  ];
+
+  // 3. Define Navigation Functions
+  const nextSlide = () => {
+    setCurrentIndex((prev) => (prev + 1) % volleyballImages.length);
+  };
+
+  const prevSlide = () => {
+    setCurrentIndex((prev) => (prev === 0 ? volleyballImages.length - 1 : prev - 1));
+  };
+
 
   // Campus Life Images
   const campusImages = [
@@ -127,13 +157,13 @@ export default function StudentGallery() {
     placementRate: "100%"
   }
 
-  const nextVideo = () => {
-    setCurrentVideo((prev) => (prev + 1) % footballVideos.length)
-  }
+  // const nextVideo = () => {
+  //   setCurrentVideo((prev) => (prev + 1) % footballVideos.length)
+  // }
 
-  const prevVideo = () => {
-    setCurrentVideo((prev) => (prev - 1 + footballVideos.length) % footballVideos.length)
-  }
+  // const prevVideo = () => {
+  //   setCurrentVideo((prev) => (prev - 1 + footballVideos.length) % footballVideos.length)
+  // }
 
   return (
     <section className="relative py-20 overflow-hidden bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
@@ -166,7 +196,7 @@ export default function StudentGallery() {
           <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-2 border border-white/20 w-full max-w-4xl">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
               {[
-                { id: 'football', name: 'Sports', fullName: 'Football Events', icon: Trophy, color: 'from-red-500 to-orange-500' },
+                { id: 'football', name: 'Sports', fullName: 'Volleyball Events', icon: Trophy, color: 'from-red-500 to-orange-500' },
                 { id: 'campus', name: 'Campus', fullName: 'Campus Life', icon: GraduationCap, color: 'from-cyan-500 to-blue-500' },
                 { id: 'scholarships', name: 'Scholarships', fullName: 'Scholarships', icon: Award, color: 'from-green-500 to-emerald-500' },
                 { id: 'hiring', name: 'Partners', fullName: 'Hiring Partners', icon: Briefcase, color: 'from-blue-500 to-purple-500' },
@@ -199,15 +229,15 @@ export default function StudentGallery() {
             <div className="flex justify-center">
               <div className="bg-gradient-to-r from-red-600 to-yellow-500 rounded-2xl p-1">
                 <div className="bg-slate-900 rounded-xl px-8 py-4 flex items-center space-x-4">
-                  <div className="text-4xl">🐂</div>
+                  {/* <div className="text-4xl">🐂</div>
                   <div>
                     <div className="text-sm text-red-400 font-medium">Official Partner</div>
                     <div className="text-2xl font-bold text-white">Red Bull</div>
-                  </div>
-                  <div className="w-px h-12 bg-white/20"></div>
+                  </div> */}
+                  {/* <div className="w-px h-12 bg-white/20"></div> */}
                   <div className="text-center">
-                    <div className="text-sm text-gray-400">Campus Football</div>
-                    <div className="text-lg font-semibold text-yellow-400">Championship 2024</div>
+                    <div className="text-sm text-gray-400">Campus Volley Ball</div>
+                    <div className="text-lg font-semibold text-yellow-400">Championship 2025</div>
                   </div>
                 </div>
               </div>
@@ -216,60 +246,60 @@ export default function StudentGallery() {
             {/* Video Showcase */}
             <div className="relative">
               <div className="grid lg:grid-cols-2 gap-8 items-center">
-                {/* Video Player */}
+                {/* Image Display (Replaced Video) */}
                 <div className="relative group">
-                  <div className="relative overflow-hidden rounded-3xl shadow-2xl border-4 border-red-500/30 bg-black">
-                    <video
-                      key={footballVideos[currentVideo].id}
-                      className="w-full h-[400px] object-cover"
-                      controls
-                      poster=""
-                    >
-                      <source src={footballVideos[currentVideo].videoUrl} type="video/quicktime" />
-                      <source src={footballVideos[currentVideo].videoUrl} type="video/mp4" />
-                      Your browser does not support the video tag.
-                    </video>
+                  <div className="relative overflow-hidden rounded-3xl shadow-2xl border-4 border-yellow-500/30 bg-black">
+                    {/* Main Image */}
+                    <img
+                      key={volleyballImages[currentIndex].id}
+                      src={volleyballImages[currentIndex].imageUrl} 
+                      alt={volleyballImages[currentIndex].title}
+                      className="w-full h-[400px] object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
 
-                    {/* Red Bull Logo */}
-                    <div className="absolute top-4 right-4 bg-white/10 backdrop-blur-sm rounded-lg px-4 py-2 pointer-events-none">
-                      <span className="text-2xl">🐂</span>
-                      <span className="text-white font-bold ml-2">Red Bull</span>
+                    {/* Overlay Gradient (Optional, makes text pop) */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-60"></div>
+
+                    {/* Volleyball Champion Branding */}
+                    <div className="absolute top-4 right-4 bg-yellow-500/90 backdrop-blur-sm rounded-lg px-4 py-2 pointer-events-none z-20 shadow-lg">
+                      <span className="text-2xl">🏐</span>
+                      <span className="text-black font-bold ml-2">Volleyball Champion 2025</span>
                     </div>
                   </div>
 
                   {/* Navigation Arrows */}
                   <button
-                    onClick={prevVideo}
-                    className="absolute left-4 top-1/2 transform -translate-y-1/2 w-12 h-12 bg-white/20 hover:bg-white/30 backdrop-blur-sm rounded-full flex items-center justify-center transition-all duration-300 z-10"
+                    onClick={prevSlide}
+                    className="absolute left-4 top-1/2 transform -translate-y-1/2 w-12 h-12 bg-white/20 hover:bg-white/40 backdrop-blur-md rounded-full flex items-center justify-center transition-all duration-300 z-10 border border-white/30"
                   >
                     <ChevronLeft className="h-6 w-6 text-white" />
                   </button>
                   <button
-                    onClick={nextVideo}
-                    className="absolute right-4 top-1/2 transform -translate-y-1/2 w-12 h-12 bg-white/20 hover:bg-white/30 backdrop-blur-sm rounded-full flex items-center justify-center transition-all duration-300 z-10"
+                    onClick={nextSlide}
+                    className="absolute right-4 top-1/2 transform -translate-y-1/2 w-12 h-12 bg-white/20 hover:bg-white/40 backdrop-blur-md rounded-full flex items-center justify-center transition-all duration-300 z-10 border border-white/30"
                   >
                     <ChevronRight className="h-6 w-6 text-white" />
                   </button>
                 </div>
 
-                {/* Video Details */}
+                {/* Content Details */}
                 <div className="space-y-6">
                   <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
                     <h3 className="text-xl font-bold text-white mb-4">
-                      {footballVideos[currentVideo].title}
+                      {volleyballImages[currentIndex].title}
                     </h3>
                     <p className="text-gray-300 mb-6">
-                      {footballVideos[currentVideo].description}
+                      {volleyballImages[currentIndex].description}
                     </p>
 
                     {/* Highlights */}
                     <div className="space-y-3">
                       <h4 className="text-lg font-semibold text-yellow-400">Event Highlights</h4>
                       <div className="flex flex-wrap gap-2">
-                        {footballVideos[currentVideo].highlights.map((highlight, index) => (
+                        {volleyballImages[currentIndex].highlights.map((highlight, index) => (
                           <span
                             key={index}
-                            className="bg-gradient-to-r from-red-600/20 to-orange-600/20 text-white px-4 py-2 rounded-full text-sm border border-red-500/30"
+                            className="bg-gradient-to-r from-yellow-600/20 to-orange-600/20 text-white px-4 py-2 rounded-full text-sm border border-yellow-500/30"
                           >
                             🏆 {highlight}
                           </span>
@@ -281,9 +311,9 @@ export default function StudentGallery() {
                   {/* Stats */}
                   <div className="grid grid-cols-3 gap-4">
                     {[
-                      { label: 'Matches Played', value: '15+', icon: '⚽' },
-                      { label: 'Goals Scored', value: '42', icon: '🥅' },
-                      { label: 'Trophies Won', value: '3', icon: '🏆' },
+                      { label: 'Matches', value: '15+', icon: '🏐' },
+                      { label: 'Points', value: '120', icon: '📈' },
+                      { label: 'Rank', value: '#1', icon: '🥇' },
                     ].map((stat, index) => (
                       <div key={index} className="bg-white/10 backdrop-blur-sm rounded-xl p-4 text-center border border-white/20">
                         <div className="text-2xl mb-2">{stat.icon}</div>
@@ -293,15 +323,15 @@ export default function StudentGallery() {
                     ))}
                   </div>
 
-                  {/* Video Indicators */}
+                  {/* Slide Indicators */}
                   <div className="flex justify-center space-x-2">
-                    {footballVideos.map((_, index) => (
+                    {volleyballImages.map((_, index) => (
                       <button
                         key={index}
-                        onClick={() => setCurrentVideo(index)}
+                        onClick={() => setCurrentIndex(index)}
                         className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                          index === currentVideo
-                            ? 'bg-red-500 w-8'
+                          index === currentIndex
+                            ? 'bg-yellow-500 w-8'
                             : 'bg-white/30 hover:bg-white/50'
                         }`}
                       />
