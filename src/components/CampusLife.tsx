@@ -998,7 +998,7 @@ const facilities = [
             <div className="text-center mb-12">
               <h2 className="text-4xl font-bold mb-6">⚽ Calling All Footballers! Want to Go Pro?</h2>
               <p className="text-xl text-green-100 max-w-4xl mx-auto">
-                BIMSR sponsors you for championship levels! Train under AIFFF qualified coaches for FREE and pursue your
+                BIMSR sponsors you for championship levels! Train under AIFF qualified coaches for FREE and pursue your
                 professional football dreams.
               </p>
             </div>
@@ -1007,7 +1007,7 @@ const facilities = [
                 <div className="w-16 h-16 bg-gradient-to-r from-yellow-500 to-orange-500 rounded-2xl flex items-center justify-center mx-auto mb-4 text-white shadow-lg">
                   <Trophy className="h-8 w-8" />
                 </div>
-                <h3 className="text-lg font-bold mb-2">AIFFF Qualified Coaches</h3>
+                <h3 className="text-lg font-bold mb-2">AIFF Qualified Coaches</h3>
                 <p className="text-green-100 text-sm">Train under certified professional football coaches</p>
               </div>
               <div className="text-center">

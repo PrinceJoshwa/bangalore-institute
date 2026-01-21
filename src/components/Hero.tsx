@@ -397,10 +397,10 @@ export default function Hero() {
       title: "Calling All Footballers! Want to Go Pro?",
       subtitle: "BIMSR Sponsors You for Championship Levels",
       description:
-        "Train under AIFFF Qualified Coaches for FREE! Get sponsored for all championship levels. BIMSR is where passion meets profession - become a world-class professional from one campus.",
+        "Train under AIFF Qualified Coaches for FREE! Get sponsored for all championship levels. BIMSR is where passion meets profession - become a world-class professional from one campus.",
       image:
         "https://images.unsplash.com/photo-1581092160562-40aa08e78837?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
-      stats: { coaching: "AIFFF", sponsorship: "Full", training: "FREE" },
+      stats: { coaching: "AIFF", sponsorship: "Full", training: "FREE" },
     },
   ]
 
@@ -428,7 +428,7 @@ export default function Hero() {
     {
       icon: <Trophy className="h-6 w-6" />,
       title: "Sports Kit & Training",
-      desc: "Free sports kit + AIFFF qualified coaches",
+      desc: "Free sports kit + AIFF qualified coaches",
     },
     { icon: <Star className="h-6 w-6" />, title: "0% Interest EMI", desc: "Flexible payment options available" },
   ]
@@ -495,7 +495,7 @@ export default function Hero() {
                 <div>
                   <div className="font-bold text-orange-800">Football Excellence Program</div>
                   <div className="text-sm text-orange-600">
-                    AIFFF Qualified Coaches • Championship Sponsorship • Professional Training
+                    AIFF Qualified Coaches • Championship Sponsorship • Professional Training
                   </div>
                 </div>
               </div>
