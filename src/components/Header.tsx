@@ -96,26 +96,47 @@ export default function Header() {
       {/* Top Contact Bar */}
       <div className="bg-gradient-to-r from-slate-900 to-slate-800 text-white py-2 hidden lg:block">
         <div className="container mx-auto px-4">
-          <div className="flex justify-between items-center text-sm">
-            <div className="flex items-center space-x-6">
-              <div className="flex items-center space-x-2">
-                <Phone className="h-4 w-4" />
-                <span>+91 7676401932</span>
+                    <div className="flex justify-between items-center text-sm">
+            
+            {/* Left Side: CollegePedia + Contact Info */}
+            <div className="flex items-center">
+              
+              {/* --- NEW: CollegePedia Logo Section --- */}
+              <div className="flex items-center gap-3 mr-6 border-r border-slate-600 pr-6">
+                 <span className="text-[10px] text-gray-400 uppercase tracking-wider font-semibold">Powered By</span>
+                 {/* White background container for the logo */}
+                 <div className="bg-white rounded px-2 py-0.5 h-6 flex items-center justify-center">
+                    <img 
+                      src="collegepedia1.jpg" 
+                      alt="CollegePedia" 
+                      className="h-full w-auto object-contain" 
+                    />
+                 </div>
               </div>
-              <div className="flex items-center space-x-2">
-                <Mail className="h-4 w-4" />
-                <span>admissions@bangaloreinstitutions.com</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <MapPin className="h-4 w-4" />
-                <span>Bangalore, Karnataka</span>
+
+              {/* Contact Info */}
+              <div className="flex items-center space-x-6">
+                <div className="flex items-center space-x-2">
+                  <Phone className="h-3.5 w-3.5 text-blue-400" />
+                  <span className="text-gray-200">+91 7676401932</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <Mail className="h-3.5 w-3.5 text-blue-400" />
+                  <span className="text-gray-200">admissions@bangaloreinstitutions.com</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <MapPin className="h-3.5 w-3.5 text-blue-400" />
+                  <span className="text-gray-200">Bangalore, Karnataka</span>
+                </div>
               </div>
             </div>
+
+            {/* Right Side: CTA */}
             <div className="flex items-center space-x-4">
-              <span className="text-yellow-400 font-semibold">🎯 Admissions 2025-26 Open!</span>
+              <span className="text-yellow-400 font-semibold text-xs animate-pulse">🎯 Admissions 2025-26 Open!</span>
               <Link
                 to="admission"
-                className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-4 py-1 rounded-full text-xs font-medium transition-all duration-300 transform hover:scale-105"
+                className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-4 py-1 rounded-full text-xs font-medium transition-all duration-300 transform hover:scale-105 shadow-md"
               >
                 Apply Now
               </Link>
