@@ -4868,8 +4868,13 @@ export default function CampusLife() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 auto-rows-[150px] md:auto-rows-[200px] grid-flow-dense">
              
              {/* 1. THE FEATURE VIDEO BLOCK */}
+{/* 1. THE FEATURE VIDEO BLOCK */}
              <div className="col-span-2 row-span-2 relative rounded-xl overflow-hidden shadow-lg bg-black">
                 <video 
+                  autoPlay 
+                  muted 
+                  loop 
+                  playsInline
                   controls 
                   className="absolute inset-0 w-full h-full object-cover"
                   poster="/campus-video-thumbnail.jpg" 
