@@ -33,7 +33,7 @@
 //     secondYear: "₹1,10,000",
 //     thirdYear: "₹1,10,000",
 //     fourthYear: "100% Scholarship",
-//     totalFee: "₹4,25,000",
+//     totalFee: "₹3,50,000",
 //   }
 
 //   const placementStats = {
@@ -356,11 +356,11 @@ export default function BCOMACCAProgram() {
 
   const feeStructure = {
     admissionFee: "₹25,000",
-    firstYear: "₹1,80,000",
-    secondYear: "₹1,10,000",
-    thirdYear: "₹1,10,000",
+    firstYear: "₹1,20,000",
+    secondYear: "₹1,15,000",
+    thirdYear: "₹1,15,000",
     fourthYear: "100% Scholarship",
-    totalFee: "₹4,25,000",
+    totalFee: "₹3,50,000",
   }
 
   const placementStats = {

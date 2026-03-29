@@ -697,7 +697,7 @@
 //                 Get detailed information about all our programs, fees, and facilities
 //               </p>
 //               <a
-//                 href="course-brochure.pdf"
+//                 href="fees-structure.pdf"
 //                 download
 //                 className="bg-white text-blue-600 px-6 py-3 rounded-xl font-semibold hover:bg-gray-100 transition-all duration-300 inline-flex items-center gap-2"
 //               >
@@ -1448,7 +1448,7 @@ export default function Admission() {
                 Get detailed information about all our programs, fees, and facilities
               </p>
               <a
-                href="course-brochure.pdf"
+                href="fees-structure.pdf"
                 download
                 className="bg-white text-blue-600 px-6 py-3 rounded-xl font-semibold hover:bg-gray-100 transition-all duration-300 inline-flex items-center gap-2"
               >

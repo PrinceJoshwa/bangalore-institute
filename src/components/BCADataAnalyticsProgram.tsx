@@ -29,11 +29,11 @@
 
 //   const feeStructure = {
 //     admissionFee: "₹25,000",
-//     firstYear: "₹2,00,000",
+//     firstYear: "₹1,40,000",
 //     secondYear: "₹85,000",
 //     thirdYear: "₹85,000",
 //     fourthYear: "100% Scholarship",
-//     totalFee: "₹3,95,000",
+//     totalFee: "₹3,10,000",
 //   }
 
 //   const placementStats = {
@@ -356,11 +356,11 @@ export default function BCADataAnalyticsProgram() {
 
   const feeStructure = {
     admissionFee: "₹25,000",
-    firstYear: "₹2,00,000",
+    firstYear: "₹1,40,000",
     secondYear: "₹85,000",
     thirdYear: "₹85,000",
     fourthYear: "100% Scholarship",
-    totalFee: "₹3,95,000",
+    totalFee: "₹3,10,000",
   }
 
   const placementStats = {

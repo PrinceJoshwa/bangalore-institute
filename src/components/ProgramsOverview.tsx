@@ -26,7 +26,7 @@ export default function ProgramsOverview() {
       title: "BCA + Full Stack Development + PGCCA",
       category: "Technology",
       duration: "3+1 Years",
-      totalFee: "₹3,95,000",
+      totalFee: "₹3,10,000",
       semesterFee: "₹65,833",
       description: "Master full-stack development with modern frameworks and technologies",
       highlights: [
@@ -51,7 +51,7 @@ export default function ProgramsOverview() {
       title: "BCA + Data Analytics + PGCCA",
       category: "Analytics",
       duration: "3+1 Years",
-      totalFee: "₹3,95,000",
+      totalFee: "₹3,10,000",
       semesterFee: "₹65,833",
       description: "Become a data scientist with advanced analytics and machine learning skills",
       highlights: [
@@ -77,7 +77,7 @@ export default function ProgramsOverview() {
     //   title: "BCA + Digital Marketing + PGCCA",
     //   category: "Marketing",
     //   duration: "3+1 Years",
-    //   totalFee: "₹3,95,000",
+    //   totalFee: "₹3,10,000",
     //   semesterFee: "₹65,833",
     //   description: "Master digital marketing strategies and technologies for the modern business world",
     //   highlights: [
@@ -102,7 +102,7 @@ export default function ProgramsOverview() {
       title: "BBA + Digital Marketing + PGCBA",
       category: "Business",
       duration: "3+1 Years",
-      totalFee: "₹3,65,000",
+      totalFee: "₹2,80,000",
       semesterFee: "₹60,833",
       description: "Combine business management with digital marketing expertise",
       highlights: [
@@ -128,7 +128,7 @@ export default function ProgramsOverview() {
       title: "BCOM + ACCA + PGCFM",
       category: "Finance",
       duration: "3+1 Years",
-      totalFee: "₹4,25,000",
+      totalFee: "₹3,50,000",
       semesterFee: "₹70,833",
       description: "Global finance qualification with ACCA certification",
       highlights: [
@@ -153,8 +153,8 @@ export default function ProgramsOverview() {
   const handleDownloadBrochure = () => {
     // Trigger direct PDF download
     const link = document.createElement("a")
-    link.href = "/course-brochure.pdf" // Your PDF path
-    link.download = "BIMSR-Course-Brochure.pdf"
+    link.href = "/fees-structure.pdf" // Your PDF path
+    link.download = "BIMSR-Course-Fees-Brochure.pdf"
     link.click()
   }
 

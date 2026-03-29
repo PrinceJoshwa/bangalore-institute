@@ -33,7 +33,7 @@
 //     secondYear: "₹75,000",
 //     thirdYear: "₹75,000",
 //     fourthYear: "100% Scholarship",
-//     totalFee: "₹3,65,000",
+//     totalFee: "₹2,80,000",
 //   }
 
 //   const placementStats = {
@@ -358,11 +358,11 @@ export default function BBADigitalMarketingProgram() {
   // Existing Fee Structure preserved
   const feeStructure = {
     admissionFee: "₹25,000",
-    firstYear: "₹1,90,000",
+    firstYear: "₹1,30,000",
     secondYear: "₹75,000",
     thirdYear: "₹75,000",
     fourthYear: "100% Scholarship",
-    totalFee: "₹3,65,000",
+    totalFee: "₹2,80,000",
   }
 
   // Existing Placement Stats preserved
