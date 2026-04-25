@@ -94,24 +94,19 @@ export default function Header() {
   return (
     <>
       {/* Top Contact Bar */}
-      <div className="bg-gradient-to-r from-slate-900 to-slate-800 text-white py-2 hidden lg:block">
+      <div className="hidden bg-gradient-to-r from-slate-900 to-slate-800 py-2 text-white lg:block">
         <div className="container mx-auto px-4">
-                    <div className="flex justify-between items-center text-sm">
-            
-            {/* Left Side: CollegePedia + Contact Info */}
+          <div className="flex items-center justify-between text-sm">
             <div className="flex items-center">
-              
-              {/* --- NEW: CollegePedia Logo Section --- */}
-              <div className="flex items-center gap-3 mr-6 border-r border-slate-600 pr-6">
-                 <span className="text-[10px] text-gray-400 uppercase tracking-wider font-semibold">Powered By</span>
-                 {/* White background container for the logo */}
-                 <div className="bg-white rounded px-2 py-0.5 h-6 flex items-center justify-center">
-                    <img 
-                      src="collegepedia1.jpg" 
-                      alt="CollegePedia" 
-                      className="h-full w-auto object-contain" 
-                    />
-                 </div>
+              <div className="mr-6 flex items-center gap-3 border-r border-slate-600 pr-6">
+                <span className="text-[10px] font-semibold uppercase tracking-wider text-gray-400">Powered By</span>
+                <div className="flex h-6 items-center justify-center rounded bg-white px-2 py-0.5">
+                  <img
+                    src="collegepedia1.jpg"
+                    alt="CollegePedia"
+                    className="h-full w-auto object-contain"
+                  />
+                </div>
               </div>
 
               {/* Contact Info */}
